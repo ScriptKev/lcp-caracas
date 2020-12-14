@@ -1,10 +1,11 @@
+// @ts-nocheck
 import styled from '@emotion/styled'
 
 export const NavStyled = styled.nav`
-  background-color: red;
+  background-color: black;
   height: 3rem;
   width: 100%;
-  color: ${props => props.theme.colors.primary};
+  color: ${({ theme }) => theme.colors.primary};
 `
 
 export const ContainerStyled = styled.div`

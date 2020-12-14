@@ -1,5 +1,5 @@
 {
-  "name": "lcp-carcas-website",
+  "name": "lcp-caracas-website",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -17,15 +17,5 @@
     "react-dom": "17.0.1",
     "react-hook-form": "^6.13.0"
   },
-  "devDependencies": {
-    "@testing-library/jest-dom": "^5.11.6",
-    "@testing-library/react": "^11.2.2",
-    "@testing-library/react-hooks": "^3.7.0",
-    "@testing-library/user-event": "^12.5.0",
-    "babel-jest": "^26.6.3",
-    "enzyme": "^3.11.0",
-    "enzyme-adapter-react-16": "^1.15.5",
-    "enzyme-to-json": "^3.6.1",
-    "jest": "^26.6.3"
-  }
+  "devDependencies": {}
 }

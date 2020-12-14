@@ -5,7 +5,6 @@ import { Global, css } from '@emotion/react'
 const AppLayoutStyled = styled.div`
   width: 100%;
   height: 100%;
-  background-color: #eee;
 `
 
 const GlobalStyled = () => <Global styles={css`

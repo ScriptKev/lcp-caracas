@@ -2,17 +2,14 @@ import styled from '@emotion/styled'
 
 export const HeaderStyled = styled.header`
   height: 100vh;
-  background-image: url('/img/alabanza.jpg');
+  background-image: url('/img/alabanza.webp');
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
 
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas:  "."
-                        "header__content"
-                        ".";
+  grid-template-rows: 1fr;
 
   & h1 {
     color: whitesmoke;
@@ -29,29 +26,10 @@ export const HeaderStyled = styled.header`
 `
 
 export const ContainerStyled = styled.div`
-  grid-area: header__content;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  max-width: 1920px;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  justify-items: center;
-
-  @media (min-width: 768px) and (max-width: 1024px) {
-    .header__container {
-      grid-template-rows: min-content min-content min-content;
-    }
-  }
-`
-
-export const headerDirectionStyled = styled.div`
-    color: whitesmoke;
-    font-weight: 600;
-    text-align: center;
-    font-size: 20px;
-
-  @media (min-width: 768px) and (max-width: 1024px) {
-    align-self: flex-start;
-    font-size: 20px;
-}
 `
