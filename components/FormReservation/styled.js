@@ -70,6 +70,11 @@ export const FieldRadioStyled = styled.div`
   width: 100%;
   margin-top: 10px;
   height: min-content;
+
+  & label {
+    font-family: "Helvetica Neue";
+    font-weight: normal;
+  }
 `
 
 export const InputRadioStyled = styled.input`

@@ -22,6 +22,7 @@ const customStyles = {
 };
 
 export default function Reservaciones() {
+  const router = useRouter()
   const [totalReservationsFirstService, setTotalReservationsFirstService] = useState(0)
   const [totalReservationsSecondService, setTotalReservationsSecondService] = useState(0)
 
@@ -43,9 +44,11 @@ export default function Reservaciones() {
 
   const [showModal, hideModal] = useModal(() => (
     <ReactModal style={customStyles} isOpen>
-      <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
-        <span style={{ fontSize: '25px', color: '#1a5187', marginBottom: '20px' }}>Reservacion Exitosa! 😀</span>
-        <Button title='Entendido' primary handleClick={hideModal} />
+      <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', textAlign: 'center' }}>
+        <span style={{ fontSize: '25px', color: '#1a5187', marginBottom: '10px' }}>¡Reservación Exitosa!
+          <br />
+          <img src='/icons/icon-success.svg' alt='success' width='40px' style={{ marginTop: '10px' }} /></span>
+        <Button title='Volver al inicio' primary handleClick={() => router.push('/')} />
       </div>
     </ReactModal>
   ))

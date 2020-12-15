@@ -85,7 +85,7 @@ const FormReservation = ({ openModal, totalReservationsFirstService, totalReserv
               register={register}
               rules={rules.worshipShedule}
               type='radio'
-              labelTitle='Primer Servicio - 9:00am'
+              labelTitle='1° Servicio 9:00 a.m.'
             />
         }
 
@@ -100,7 +100,7 @@ const FormReservation = ({ openModal, totalReservationsFirstService, totalReserv
               register={register}
               rules={rules.worshipShedule}
               type='radio'
-              labelTitle='Segundo Servicio - 11:00am'
+              labelTitle='2° Servicio 11:00 a.m.'
             />
         }
         {errors.worshipShedule && <ErrorMsgStyled>{errors.worshipShedule.message}</ErrorMsgStyled>}
