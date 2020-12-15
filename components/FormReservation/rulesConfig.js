@@ -1,16 +1,16 @@
 const rules = {
   name: {
     required: { value: true, message: 'Nombre obligatorio' },
-    maxLength: { value: 20, message: 'Maximo 20 letras' },
+    maxLength: { value: 50, message: 'Maximo 50 letras' },
     minLength: { value: 3, message: 'Minimo 3 letras' },
-    pattern: /^[A-Za-z]+$/i
+    pattern: /^[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]+$/g
   },
 
   lastname: {
     required: { value: true, message: 'Apellido obligatorio' },
-    maxLength: { value: 20, message: 'Maximo 20 letras' },
+    maxLength: { value: 50, message: 'Maximo 50 letras' },
     minLength: { value: 3, message: 'Minimo 3 letras' },
-    pattern: /^[A-Za-z]+$/i
+    pattern: /^[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]+$/g
   },
 
   phone: {

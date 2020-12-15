@@ -12,8 +12,8 @@ export default function App({ Component, pageProps }) {
           <Head>
             <meta charSet='utf-8' />
             <meta name='title' content='La Casa de mi Padre - Donde todos tienen un lugar' />
-            <meta name='description' content='Somos una iglesia cristiana, sencilla, con corazon de familia, donde todos tienen un lugar.' />
-            <meta name='keywords' content='La Casa de mi Padre, lcp caracas, iglesia, cristiana' />
+            <meta name='description' content='Somos una iglesia cristiana, alegre, sencilla, con corazón de familia, donde todos tienen un lugar.' />
+            <meta name='keywords' content='La Casa de mi Padre, lcp caracas, iglesia cristiana, predicas cristianas' />
             <meta name='author' content='La Casa de mi Padre' />
             <meta name='copyright' content='La Casa de mi Padre' />
             <meta name='robots' content='index' />
@@ -24,18 +24,18 @@ export default function App({ Component, pageProps }) {
             <link rel="preload" href="/fonts/Helvetica-Neue/HelveticaNeue-Roman.otf" as="font" crossOrigin="" />
             <link rel="preload" href="/fonts/Helvetica-Neue/HelveticaNeue-Extended.otf" as="font" crossOrigin="" />
 
-            <meta property="og:site_name" content="La Casa de mi Padre" />
+            <meta property="og:site_name" content="La Casa de mi Padre - Donde todos tienen un lugar" />
             <meta property='og:type' content='website' />
             <meta property='og:url' content='https://lcpcaracas.org/' />
             <meta property='og:title' content='La Casa de mi Padre - Donde todos tienen un lugar' />
-            <meta property='og:description' content='Somos una iglesia cristiana, sencilla, con corazon de familia, donde todos tienen un lugar.' />
+            <meta property='og:description' content='Somos una iglesia cristiana, alegre, sencilla, con corazón de familia, donde todos tienen un lugar.' />
             <meta property='og:image' content='https://lcpcaracas.org/img/lcp-public.jpg' />
 
-            <meta name="twitter:image:alt" content="La Casa de mi Padre" />
+            <meta name="twitter:image:alt" content="La Casa de mi Padre - Donde todos tienen un lugar" />
             <meta property='twitter:card' content='summary_large_image' />
             <meta property='twitter:url' content='https://lcpcaracas.org/' />
             <meta property='twitter:title' content='La Casa de mi Padre - Donde todos tienen un lugar' />
-            <meta property='twitter:description' content='Somos una iglesia cristiana, sencilla, con corazon de familia, donde todos tienen un lugar.' />
+            <meta property='twitter:description' content='Somos una iglesia cristiana, alegre, sencilla, con corazón de familia, donde todos tienen un lugar.' />
             <meta property='twitter:image' content='https://lcpcaracas.org/img/lcp-public.jpg' />
           </Head>
 
