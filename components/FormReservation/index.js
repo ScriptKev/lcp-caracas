@@ -44,9 +44,6 @@ const FormReservation = ({ openModal, totalReservationsFirstService, totalReserv
       data.worshipShedule,
       selectedOption
     ])
-
-    console.log('Antes de enviar reservacion', dataReservation)
-
   }
 
   const handleTypeSelect = e => {

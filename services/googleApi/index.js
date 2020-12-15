@@ -1,7 +1,7 @@
 import { TotalReservationsUpdateIncrement } from 'services/firebase'
 
-const BASE_URL = process.env.NEXT_PUBLIC_NO_CODE_API_BAES_URL
-const TabSheetId = process.env.NEXT_PUBLIC_GOOGLE_DOCS_EXCEL_TAB_SHEET_ID
+const BASE_URL = 'https://v1.nocodeapi.com/scriptkev/google_sheets/JdUBuOLHGvcwRudz'
+const TabSheetId = 'Reservaciones'
 
 export const AddReservation = async (reservation, selectedOpTion) => {
   const { name, lastname, email, phone, worshipShedule } = reservation
@@ -14,7 +14,7 @@ export const AddReservation = async (reservation, selectedOpTion) => {
     `${name} ${lastname}`,
     phone,
     email,
-    selectedOpTion,
+    Number(selectedOpTion),
     worshipShedule,
   ]
 
