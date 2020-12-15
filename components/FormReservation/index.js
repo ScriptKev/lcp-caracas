@@ -70,7 +70,7 @@ const FormReservation = ({ openModal, totalReservationsFirstService, totalReserv
         {errors.phone && <ErrorMsgStyled>{errors.phone.message}</ErrorMsgStyled>}
         <br />
 
-        <FieldInput name='email' placeholder='Correo Electronico' register={register} rules={rules.email} type='email' />
+        <FieldInput name='email' placeholder='Correo Electrónico' register={register} rules={rules.email} type='email' />
         {errors.email && <ErrorMsgStyled>{errors.email.message}</ErrorMsgStyled>}
         <br />
 

@@ -32,8 +32,8 @@ const MainHome = () => {
 
         <div className='home__pray--versicle'>
           <p style={{ textAlign: 'center' }}>
-            Y esta es la confianza que tenemos en él, que si pedimos <br />
-            alguna cosa conforme a su voluntad, él nos oye. <span style={{ color: '#FFC000' }}>1Jn. 5:14</span>
+            "Y esta es la confianza que tenemos en él, que si pedimos <br />
+            alguna cosa conforme a su voluntad, él nos oye". <span style={{ color: '#FFC000' }}>1Jn. 5:14</span>
           </p>
         </div>
       </PraySectionStyled>

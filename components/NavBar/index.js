@@ -19,7 +19,7 @@ const NavBar = ({ light }) => {
         <div>
           <Link href='/reservaciones'>
             <a>
-              <span className='route__reservations' style={{ border: '2.5px solid #ffe32c', borderRadius: '20px', padding: '5px' }}>
+              <span className='route__reservations' style={{ border: '2.5px solid #FFC000', borderRadius: '20px', padding: '5px' }}>
                 Reservaciones
               </span>
             </a>

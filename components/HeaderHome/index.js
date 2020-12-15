@@ -11,9 +11,9 @@ const HeaderHome = () => {
           <SloganStyled>
             <h2>
               donde
-              <div style={{ color: '#ffe32c' }}>todos</div>
+              <div style={{ color: '#FFC000' }}>todos</div>
               tienen
-              <div style={{ color: 'yellow' }}>un</div>lugar</h2>
+              <div style={{ color: '#FFC000' }}>un</div>lugar</h2>
           </SloganStyled>
         </div>
 
