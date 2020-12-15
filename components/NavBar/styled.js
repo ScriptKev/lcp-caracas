@@ -66,6 +66,10 @@ export const NavStyled = styled.nav`
 
   & .route__reservations {
     color: ${({ light }) => light ? '#1a5187' : 'white'};
+
+    @media screen and (max-width: 425px) {
+      font-size: 0.9rem;
+    }
   }
 `
 
@@ -85,7 +89,7 @@ export const ContainerStyled = styled.div`
 `
 
 export const FlagStyled = styled.div`
-  width: 100px;
+  width: 90px;
   height: 100%;
   background-color: #1e478dcc;
   border-radius: 0 0 3px 3px;
@@ -93,5 +97,6 @@ export const FlagStyled = styled.div`
   box-shadow: 4px 7px 15px #00000054;
   display: flex;
   justify-content: center;
-
+  clip-path: inset(0 0 25% 0);
+  filter: drop-shadow(4px 7px 15px #00000054);
 `
