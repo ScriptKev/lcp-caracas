@@ -174,8 +174,9 @@ export const PraySectionStyled = styled.section`
       padding-bottom: 0;
 
       & button {
-        width: 250px;
-        height: 60px;
+        width: 175px;
+        height: 50px;
+        font-size: 20px
       }
     }
 
