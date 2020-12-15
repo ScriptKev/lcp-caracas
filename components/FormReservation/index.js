@@ -21,29 +21,27 @@ const FormReservation = ({ openModal, totalReservationsFirstService, totalReserv
     { value: '9', label: '9' },
     { value: '10', label: '10' },
   ]
-  const [selectedOption, setSelectedOption] = useState('none');
+  const [selectedOption, setSelectedOption] = useState(null);
+  const [selectedOptionError, setSelectedOptionError] = useState(false);
   const [loading, setLoading] = useState(false)
-  const [dataReservation, setDataReservation] = useState([])
   const { register, handleSubmit, errors } = useForm()
 
   const onSubmit = (data, e) => {
-    setLoading(true)
-    AddReservation(data, selectedOption)
-      .then(() => {
-        e.target.reset()
-        setSelectedOption('none')
-        setLoading(false)
-        openModal()
-      })
-
-    setDataReservation([
-      data.name,
-      data.lastname,
-      data.email,
-      data.phone,
-      data.worshipShedule,
-      selectedOption
-    ])
+    console.log('Antes de condicionar', selectedOption)
+    if (selectedOption) {
+      setLoading(true)
+      setSelectedOptionError(false)
+      AddReservation(data, selectedOption)
+        .then(() => {
+          e.target.reset()
+          setSelectedOption('none')
+          setLoading(false)
+          openModal()
+        })
+    } else {
+      setSelectedOptionError(true)
+      console.error('Error', selectedOption)
+    }
   }
 
   const handleTypeSelect = e => {
@@ -72,6 +70,7 @@ const FormReservation = ({ openModal, totalReservationsFirstService, totalReserv
         <br />
 
         <Select instanceId='reservations' options={options} onChange={handleTypeSelect} placeholder='Numero de Reservaciones' />
+        {selectedOptionError && <ErrorMsgStyled>Numero de reservaciones obligatorio</ErrorMsgStyled>}
 
         <br />
         {
