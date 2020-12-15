@@ -1,13 +1,14 @@
 import PropTypes from 'prop-types'
 import { ButtonStyled } from './styled'
 
-const Button = ({ type, title, handleClick, primary, secondary }) => {
-  if (primary) return <ButtonStyled {...primary} primary type={type} onClick={handleClick}>{title}</ButtonStyled>
-  if (secondary) return <ButtonStyled {...secondary} type={type} onClick={handleClick}>{title}</ButtonStyled>
-  if (!primary && !secondary) return <ButtonStyled type={type} onClick={handleClick}>{title}</ButtonStyled>
+const Button = ({ type, title, handleClick, primary, secondary, disabled }) => {
+  if (primary) return <ButtonStyled {...primary} disabled={disabled} primary type={type} onClick={handleClick}>{title}</ButtonStyled>
+  if (secondary) return <ButtonStyled {...secondary} disabled={disabled} type={type} onClick={handleClick}>{title}</ButtonStyled>
+  if (!primary && !secondary) return <ButtonStyled disabled={disabled} type={type} onClick={handleClick}>{title}</ButtonStyled>
 }
 
 Button.proptypes = {
+  disabled: PropTypes.bool,
   handleClick: PropTypes.func,
   primary: PropTypes.bool,
   secondary: PropTypes.bool,
@@ -16,7 +17,8 @@ Button.proptypes = {
 }
 
 Button.defaultProps = {
-  handleClick: () => console.log('Default handleClick'),
+  disabled: false,
+  handleClick: () => { },
   primary: false,
   secondary: false,
   type: 'button',
