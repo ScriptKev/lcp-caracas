@@ -60,7 +60,7 @@ export default function Reservaciones() {
 
 
       <NavBar light />
-      <main style={{ paddingTop: '180px' }}>
+      <main style={{ paddingTop: '130px' }}>
         <FormBgStyled />
         <FormSeccionStyled>
           <FormReservation
