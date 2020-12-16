@@ -40,9 +40,6 @@ const GlobalStyled = () => <Global styles={css`
     font-display: swap;
   }
 
-
-
-
   html,
   body {
     padding: 0;
