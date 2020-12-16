@@ -21,7 +21,6 @@ export default function App({ Component, pageProps }) {
 
             <link rel="preload" href="/fonts/Helvetica-Neue/HelveticaNeue-MediumExtObl.otf" as="font" crossOrigin="" />
             <link rel="preload" href="/fonts/Helvetica-Neue/HelveticaNeue-Black.otf" as="font" crossOrigin="" />
-            <link rel="preload" href="/fonts/Helvetica-Neue/HelveticaNeue-Roman.otf" as="font" crossOrigin="" />
             <link rel="preload" href="/fonts/Helvetica-Neue/HelveticaNeue-Extended.otf" as="font" crossOrigin="" />
 
             <meta property="og:site_name" content="La Casa de mi Padre - Donde todos tienen un lugar" />
