@@ -4,6 +4,8 @@ import NavBar from 'components/NavBar'
 import Head from 'next/head'
 
 export default function Home() {
+  console.log('vercel variables', process.env.GOOGLE_SHEETS_BASE_URL, process.env.FIREBASE_CONFIG)
+
   return (
     <>
       <Head>
