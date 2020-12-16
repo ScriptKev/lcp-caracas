@@ -4,16 +4,10 @@ import NavBar from 'components/NavBar'
 import Head from 'next/head'
 
 export default function Home() {
-  console.log('vercel variables', process.env.GOOGLE_SHEETS_BASE_URL, process.env.FIREBASE_CONFIG)
   console.log(
-    'vercel variables segundo intento',
-    process.env.VERCEL_ENV_GOOGLE_SHEETS_BASE_URL,
-    process.env.FIREBASE_CONFIG_FIREBASE_CONFIG
-  )
-  console.log(
-    'vercel variables tercer intento',
+    'vercel variables cuarto intento',
     process.env.NEXT_PUBLIC_TAB_SHEET_ID,
-    process.env.FIREBASE_CONFIG_FIREBASE_CONFIG
+    process.env.NEXT_PUBLIC_LCP_FIREBASE_CONFIG
   )
 
   return (
