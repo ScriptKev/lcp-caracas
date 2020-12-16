@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useRouter } from 'next/router'
-import { useForm } from 'react-hook-form'
+import { Controller, useForm } from 'react-hook-form'
 import Button from 'components/Button'
 import { ErrorMsgStyled, FormContainerStyled, FormStyled } from "./styled"
 import rules from './rulesConfig'
@@ -21,32 +21,18 @@ const FormReservation = ({ openModal, totalReservationsFirstService, totalReserv
     { value: '9', label: '9' },
     { value: '10', label: '10' },
   ]
-  const [selectedOption, setSelectedOption] = useState(null);
-  const [selectedOptionError, setSelectedOptionError] = useState(false);
   const [loading, setLoading] = useState(false)
-  const { register, handleSubmit, errors } = useForm()
+  const { control, register, handleSubmit, errors } = useForm()
 
   const onSubmit = (data, e) => {
-    console.log('Antes de condicionar', selectedOption)
-    if (selectedOption) {
-      setLoading(true)
-      setSelectedOptionError(false)
-      AddReservation(data, selectedOption)
-        .then(() => {
-          e.target.reset()
-          setSelectedOption('none')
-          setLoading(false)
-          openModal()
-        })
-    } else {
-      setSelectedOptionError(true)
-      console.error('Error', selectedOption)
-    }
+    setLoading(true)
+    AddReservation(data)
+      .then(() => {
+        e.target.reset()
+        setLoading(false)
+        openModal()
+      })
   }
-
-  const handleTypeSelect = e => {
-    setSelectedOption(e.value);
-  };
 
   if (totalReservationsFirstService >= 100 && totalReservationsSecondService >= 100) return <h1 style={{ marginTop: '50px' }}>Sin Cupos</h1>
 
@@ -69,8 +55,17 @@ const FormReservation = ({ openModal, totalReservationsFirstService, totalReserv
         {errors.email && <ErrorMsgStyled>{errors.email.message}</ErrorMsgStyled>}
         <br />
 
-        <Select instanceId='reservations' options={options} onChange={handleTypeSelect} placeholder='Numero de Reservaciones' />
-        {selectedOptionError && <ErrorMsgStyled>Numero de reservaciones obligatorio</ErrorMsgStyled>}
+        <Controller
+          instanceId='reservations'
+          name="reservations"
+          control={control}
+          options={options}
+          as={Select}
+          rules={rules.reservations}
+          placeholder='Numero de reservaciones'
+          register={register}
+        />
+        {errors.reservations && <ErrorMsgStyled>{errors.reservations.message}</ErrorMsgStyled>}
 
         <br />
         {
