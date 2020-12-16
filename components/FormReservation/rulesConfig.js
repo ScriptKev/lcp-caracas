@@ -3,14 +3,14 @@ const rules = {
     required: { value: true, message: 'Nombre obligatorio' },
     maxLength: { value: 50, message: 'Maximo 50 letras' },
     minLength: { value: 3, message: 'Minimo 3 letras' },
-    pattern: /^[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]+$/g
+    pattern: { value: /^[a-zA-ZÀ-ÿ0-9 ()-.]*$/, message: 'Nombre no permitido' }
   },
 
   lastname: {
     required: { value: true, message: 'Apellido obligatorio' },
     maxLength: { value: 50, message: 'Maximo 50 letras' },
     minLength: { value: 3, message: 'Minimo 3 letras' },
-    pattern: /^[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]+$/g
+    pattern: { value: /^[a-zA-ZÀ-ÿ0-9 ()-.]*$/, message: 'Apellido no permitido' }
   },
 
   phone: {
@@ -21,8 +21,12 @@ const rules = {
   },
 
   email: {
-    required: { value: true, message: 'Correo obligatorio' },
+    required: { value: false },
     pattern: { value: /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/, message: 'Coloque un correo valido' }
+  },
+
+  reservations: {
+    required: { value: true, message: 'Elija el numero de reservaciones' }
   },
 
   worshipShedule: {
