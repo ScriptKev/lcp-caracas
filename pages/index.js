@@ -4,6 +4,8 @@ import NavBar from 'components/NavBar'
 import Head from 'next/head'
 
 export default function Home() {
+  console.log(process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID)
+
   return (
     <>
       <Head>
