@@ -10,6 +10,11 @@ export default function Home() {
     process.env.VERCEL_ENV_GOOGLE_SHEETS_BASE_URL,
     process.env.FIREBASE_CONFIG_FIREBASE_CONFIG
   )
+  console.log(
+    'vercel variables tercer intento',
+    process.env.NEXT_PUBLIC_TAB_SHEET_ID,
+    process.env.FIREBASE_CONFIG_FIREBASE_CONFIG
+  )
 
   return (
     <>
