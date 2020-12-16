@@ -5,6 +5,11 @@ import Head from 'next/head'
 
 export default function Home() {
   console.log('vercel variables', process.env.GOOGLE_SHEETS_BASE_URL, process.env.FIREBASE_CONFIG)
+  console.log(
+    'vercel variables segundo intento',
+    process.env.VERCEL_ENV_GOOGLE_SHEETS_BASE_URL,
+    process.env.FIREBASE_CONFIG_FIREBASE_CONFIG
+  )
 
   return (
     <>
