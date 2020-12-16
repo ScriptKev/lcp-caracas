@@ -3,8 +3,9 @@ import { TotalReservationsUpdateIncrement } from 'services/firebase'
 const BASE_URL = 'https://v1.nocodeapi.com/scriptkev/google_sheets/JdUBuOLHGvcwRudz'
 const TabSheetId = 'Reservaciones'
 
-export const AddReservation = async (reservation, selectedOpTion) => {
-  const { name, lastname, email, phone, worshipShedule } = reservation
+export const AddReservation = async (reservation) => {
+  let { name, lastname, email, phone, worshipShedule, reservations: { value } } = reservation
+  if (email === '' || email === ' ') email = 'Sin correo'
   const date = new Date();
   const options = { year: 'numeric', month: 'long', day: 'numeric' };
   const dateLocal = date.toLocaleDateString("es-ES", options)
@@ -14,7 +15,7 @@ export const AddReservation = async (reservation, selectedOpTion) => {
     `${name} ${lastname}`,
     phone,
     email,
-    Number(selectedOpTion),
+    Number(value),
     worshipShedule,
   ]
 
@@ -36,5 +37,5 @@ export const AddReservation = async (reservation, selectedOpTion) => {
     console.error(err)
   }
 
-  TotalReservationsUpdateIncrement(worshipShedule, selectedOpTion)
+  TotalReservationsUpdateIncrement(worshipShedule, Number(value))
 }
