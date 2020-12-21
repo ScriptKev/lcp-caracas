@@ -32,7 +32,7 @@ export const FirstSectionStyled = styled.section`
     }
   }
 
-  .main__mainText h2 :nth-child(odd) {
+  .main__mainText h2 :nth-of-type(odd) {
       color: #FFC000;
   }
   .main_mainIcon {
