@@ -12,25 +12,18 @@ export default function Contactanos() {
   const Map = useMemo(() => dynamic(
     () => import('components/MapView'),
     {
-      loading: () => <p>A map is loading</p>,
+      loading: () => <p>Cargando mapa...</p>,
       ssr: false
     }
   ), [])
 
+  const handleResize = () => setWindowDimension(window.innerWidth)
 
   useEffect(() => {
-    setWindowDimension(window.innerWidth);
-  }, []);
-
-  useEffect(() => {
-    function handleResize() {
-      setWindowDimension(window.innerWidth);
-    }
-
+    handleResize()
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, [])
-
 
   return (
     <>
