@@ -43,19 +43,21 @@ export default function Reservaciones() {
   }, [])
 
   useEffect(() => {
-    db
-      .collection('reservaciones')
-      .onSnapshot(({ docs }) => {
-        docs.forEach(doc => {
-          if (doc.id === 'totalReservationsFirstService') {
-            setTotalReservationsFirstService(doc.data().total)
-          } else if (doc.id === 'totalReservationsSecondService') {
-            setTotalReservationsSecondService(doc.data().total)
-          } else {
-            console.error('No se ha encontrado el documento')
-          }
+    if (reservationsStatus) {
+      db
+        .collection('reservaciones')
+        .onSnapshot(({ docs }) => {
+          docs.forEach(doc => {
+            if (doc.id === 'totalReservationsFirstService') {
+              setTotalReservationsFirstService(doc.data().total)
+            } else if (doc.id === 'totalReservationsSecondService') {
+              setTotalReservationsSecondService(doc.data().total)
+            } else {
+              console.error('No se ha encontrado el documento')
+            }
+          })
         })
-      })
+    }
   }, [])
 
   const [showModal, hideModal] = useModal(() => (
@@ -77,9 +79,8 @@ export default function Reservaciones() {
         <meta name="keywords" content="Realiza una reservacion en la iglesia La Casa de mi Padre" />
       </Head>
 
-      {
-        isMobile ? <NavBarMobile /> : <NavBar light />
-      }
+      { isMobile ? <NavBarMobile /> : <NavBar light /> }
+
       <main
         style={{
           paddingTop: isMobile ? '20px' : '130px',
