@@ -51,18 +51,23 @@ export default function Contactanos() {
       <MainStyled>
         <GridStyled>
           <ContactTitleStyled>
-            <h1>Contactanos</h1>
-            <h3>La Casa de mi Padre</h3>
-            <p>Dejanos tu mensaje!</p>
+            {/* <h3 >Contactanos</h3>
+            <h4>La Casa de mi Padre</h4>
+            <p>Dejanos tu mensaje!</p> */}
           </ContactTitleStyled>
 
           <ContactFormStyled>
-            <form>
+            {/* <form>
               <input type='text' placeholder='Nombre' />
-            </form>
+            </form> */}
           </ContactFormStyled>
 
           <ContactMapStyled>
+            <h4>Estamos aqui</h4>
+            <p>
+              Edf. Santa Fe, nivel Mezzanina. Calle Tito Salas. Bellas Artes - Caracas. <br />
+              Teléfonos: 0212 - 578.59.69 / 0424 - 149.88.00
+            </p>
             <div style={{ padding: '0 50px' }}>
               <Map />
             </div>

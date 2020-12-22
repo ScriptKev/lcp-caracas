@@ -1,3 +1,4 @@
+//@ts-nocheck
 import styled from '@emotion/styled'
 
 export const FormSeccionStyled = styled.section`
@@ -12,17 +13,18 @@ export const FormBgStyled = styled.div`
     max-width: 600px;
     width: 100%;
     margin: auto;
-    height: 175px;
-    background-image: url(/img/form-header.webp);
+    height: 350px;
+    background-image: url(/img/formHeader-27-12-2020.webp);
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
     -webkit-background-position: center;
     background-position: center;
     border-radius: 5px;
+    box-shadow: 1px 1px 10px ${({ theme }) => theme.shadows.primary};
 
     @media screen and (max-width: 425px) {
-      background-image: url(/img/form-header-mobile.webp);
+      background-image: url(/img/formHeader-27-12-2020.webp);
       height: 250px;
       width: 100%;
       margin: 0 auto;
