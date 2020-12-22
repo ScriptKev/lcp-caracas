@@ -9,15 +9,10 @@ export default function Home() {
   const [windowDimension, setWindowDimension] = useState(null);
   const isMobile = windowDimension <= 640;
 
-  useEffect(() => {
-    setWindowDimension(window.innerWidth);
-  }, []);
+  const handleResize = () => setWindowDimension(window.innerWidth)
 
   useEffect(() => {
-    function handleResize() {
-      setWindowDimension(window.innerWidth);
-    }
-
+    handleResize()
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, [])
