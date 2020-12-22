@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { ContainerStyled, NavStyled, FlagStyled } from "./styled"
 
-const NavBar = ({ light }) => {
+const NavBar = ({ light, onlyFlag = false }) => {
   return (
     <NavStyled light={light}>
       <ContainerStyled>
@@ -16,20 +16,24 @@ const NavBar = ({ light }) => {
           </Link>
         </FlagStyled>
 
-        <div>
-          <Link href='/reservaciones'>
-            <a>
-              <span className='route__reservations' style={{ border: '2.5px solid #FFC000', borderRadius: '20px', padding: '5px' }}>
-                Reservaciones
+        {
+          !onlyFlag &&
+          <div>
+            <Link href='/reservaciones'>
+              <a>
+                <span className='route__reservations' style={{ border: '2.5px solid #FFC000', borderRadius: '20px', padding: '5px' }}>
+                  Reservaciones
               </span>
-            </a>
-          </Link>
+              </a>
+            </Link>
 
-          <span className='route__contact' style={{ marginLeft: '10px' }}>
-            Contactanos
-              <span className='tiptext'>En Construcción</span>
-          </span>
-        </div>
+            <span className='route__contact' style={{ marginLeft: '10px' }}>
+              <Link href='/contactanos'>
+                <a>Contactanos</a>
+              </Link>
+            </span>
+          </div>
+        }
       </ContainerStyled>
     </NavStyled>
   )
@@ -44,3 +48,5 @@ NavBar.defaultProps = {
 }
 
 export default NavBar
+
+{/* <span className='tiptext'>En Construcción</span> */ }

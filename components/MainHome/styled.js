@@ -32,7 +32,7 @@ export const FirstSectionStyled = styled.section`
     }
   }
 
-  .main__mainText h2 :nth-child(odd) {
+  .main__mainText h2 :nth-of-type(odd) {
       color: #FFC000;
   }
   .main_mainIcon {
@@ -160,6 +160,7 @@ export const PraySectionStyled = styled.section`
                             'versicle';
     row-gap: 10px;
     padding-top: 0;
+    padding-bottom: 60px;
 
     & .home__pray--title {
       margin-top: 70px;

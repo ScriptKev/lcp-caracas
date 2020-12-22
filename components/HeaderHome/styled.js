@@ -5,6 +5,7 @@ export const HeaderStyled = styled.header`
   background-image: url('/img/HeaderBg.webp');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: top;
   text-align: center;
   display: flex;
   justify-content: center;
