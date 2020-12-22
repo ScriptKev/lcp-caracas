@@ -68,9 +68,7 @@ export default function Contactanos() {
               Edf. Santa Fe, nivel Mezzanina. Calle Tito Salas. Bellas Artes - Caracas. <br />
               Teléfonos: 0212 - 578.59.69 / 0424 - 149.88.00
             </p>
-            <div style={{ padding: '0 50px' }}>
-              <Map />
-            </div>
+            <Map />
           </ContactMapStyled>
         </GridStyled>
       </MainStyled>

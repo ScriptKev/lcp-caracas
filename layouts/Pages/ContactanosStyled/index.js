@@ -49,6 +49,10 @@ export const ContactMapStyled = styled.section`
   width: 100%;
   text-align: center;
 
+  & > h4 {
+      font-size: 1.5rem;
+    }
+
   & > p {
     margin: 10px 0 20px 0;
   }
