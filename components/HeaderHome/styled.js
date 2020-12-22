@@ -2,9 +2,10 @@ import styled from '@emotion/styled'
 
 export const HeaderStyled = styled.header`
   min-height: 100vh;
-  background-image: url('/img/HeaderBg.webp');
+  background-image: url('/img/HeaderBg2.webp');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   text-align: center;
   display: flex;
   justify-content: center;
