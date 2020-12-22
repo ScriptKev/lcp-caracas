@@ -102,7 +102,8 @@ export default function Reservaciones() {
               alignItems: 'center',
               flexDirection: 'column',
               fontFamily: 'Helvetica Neue',
-              fontWeight: 'normal'
+              fontWeight: 'normal',
+              textAlign: 'center'
             }}>
               <h1 style={{ textAlign: 'center' }}>Reservaciones deshabilitadas</h1>
               <p style={{
