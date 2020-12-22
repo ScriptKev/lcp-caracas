@@ -24,38 +24,36 @@ const customStyles = {
 
 export default function Reservaciones() {
   const router = useRouter()
+  const [reservationsStatus, setReservationsStatus] = useState(false)
   const [windowDimension, setWindowDimension] = useState(null);
   const [totalReservationsFirstService, setTotalReservationsFirstService] = useState(0)
   const [totalReservationsSecondService, setTotalReservationsSecondService] = useState(0)
   const isMobile = windowDimension <= 640;
 
-  useEffect(() => {
-    setWindowDimension(window.innerWidth);
-  }, []);
+  const handleResize = () => setWindowDimension(window.innerWidth)
 
   useEffect(() => {
-    function handleResize() {
-      setWindowDimension(window.innerWidth);
-    }
-
+    handleResize()
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, [])
 
   useEffect(() => {
-    db
-      .collection('reservaciones')
-      .onSnapshot(({ docs }) => {
-        docs.forEach(doc => {
-          if (doc.id === 'totalReservationsFirstService') {
-            setTotalReservationsFirstService(doc.data().total)
-          } else if (doc.id === 'totalReservationsSecondService') {
-            setTotalReservationsSecondService(doc.data().total)
-          } else {
-            console.error('No se ha encontrado el documento')
-          }
+    if (reservationsStatus) {
+      db
+        .collection('reservaciones')
+        .onSnapshot(({ docs }) => {
+          docs.forEach(doc => {
+            if (doc.id === 'totalReservationsFirstService') {
+              setTotalReservationsFirstService(doc.data().total)
+            } else if (doc.id === 'totalReservationsSecondService') {
+              setTotalReservationsSecondService(doc.data().total)
+            } else {
+              console.error('No se ha encontrado el documento')
+            }
+          })
         })
-      })
+    }
   }, [])
 
   const [showModal, hideModal] = useModal(() => (
@@ -86,14 +84,34 @@ export default function Reservaciones() {
           paddingBottom: isMobile && '70px'
         }}
       >
-        <FormBgStyled />
-        <FormSeccionStyled>
-          <FormReservation
-            totalReservationsFirstService={totalReservationsFirstService}
-            totalReservationsSecondService={totalReservationsSecondService}
-            openModal={showModal}
-          />
-        </FormSeccionStyled>
+        {
+          reservationsStatus ?
+            <>
+              <FormBgStyled />
+              <FormSeccionStyled>
+                <FormReservation
+                  totalReservationsFirstService={totalReservationsFirstService}
+                  totalReservationsSecondService={totalReservationsSecondService}
+                  openModal={showModal}
+                />
+              </FormSeccionStyled>
+            </>
+            :
+            <div style={{
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              flexDirection: 'column',
+              fontFamily: 'Helvetica Neue',
+              fontWeight: 'normal'
+            }}>
+              <h1 style={{ textAlign: 'center' }}>Reservaciones deshabilitadas</h1>
+              <p style={{
+                fontFamily: 'Helvetica Neue',
+                fontWeight: '300'
+              }}>Se esta realizando un mantenimiento, por favor espere.</p>
+            </div>
+        }
       </main>
     </div>
   )
