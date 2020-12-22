@@ -3,6 +3,7 @@ import styled from '@emotion/styled'
 
 export const FormStyled = styled.form`
   min-width: 300px;
+  max-width: 500px;
   width: min-content;
   height: 100%;
 `
@@ -46,10 +47,10 @@ export const InputTextStyled = styled.input`
   }
 
   &:-internal-autofill-selected {
-  background-color: #1a5187 !important;
-  color: white !important;
+  background-color: #1a5187;
+  color: white;
 }
-/* Change Autocomplete styles in Chrome*/
+
   &:-webkit-autofill,
   &:-webkit-autofill:hover,
   &:-webkit-autofill:focus,

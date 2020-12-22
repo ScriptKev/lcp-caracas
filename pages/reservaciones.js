@@ -1,14 +1,15 @@
 // @ts-nocheck
-import FormReservation from 'components/FormReservation'
+import { useEffect, useState } from 'react'
 import Head from 'next/head'
-import NavBar from 'components/NavBar'
-import ReactModal from 'react-modal'
-import { useModal } from 'react-modal-hook'
-import { FormBgStyled, FormSeccionStyled } from 'layouts/Pages/ReservacionesLayout'
-import Button from 'components/Button'
 import { useRouter } from 'next/router';
+import { useModal } from 'react-modal-hook'
 import { db } from 'services/firebase'
-import { useEffect, useState } from 'react';
+import Button from 'components/Button'
+import ReactModal from 'react-modal'
+import NavBar from 'components/NavBar'
+import FormReservation from 'components/FormReservation'
+import NavBarMobile from 'components/NavBarMobile'
+import { FormBgStyled, FormSeccionStyled } from 'layouts/Pages/ReservacionesLayout'
 
 const customStyles = {
   content: {
@@ -23,8 +24,23 @@ const customStyles = {
 
 export default function Reservaciones() {
   const router = useRouter()
+  const [windowDimension, setWindowDimension] = useState(null);
   const [totalReservationsFirstService, setTotalReservationsFirstService] = useState(0)
   const [totalReservationsSecondService, setTotalReservationsSecondService] = useState(0)
+  const isMobile = windowDimension <= 640;
+
+  useEffect(() => {
+    setWindowDimension(window.innerWidth);
+  }, []);
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowDimension(window.innerWidth);
+    }
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, [])
 
   useEffect(() => {
     db
@@ -61,9 +77,15 @@ export default function Reservaciones() {
         <meta name="keywords" content="Realiza una reservacion en la iglesia La Casa de mi Padre" />
       </Head>
 
-
-      <NavBar light />
-      <main style={{ paddingTop: '130px' }}>
+      {
+        isMobile ? <NavBarMobile /> : <NavBar light />
+      }
+      <main
+        style={{
+          paddingTop: isMobile ? '20px' : '130px',
+          paddingBottom: isMobile && '70px'
+        }}
+      >
         <FormBgStyled />
         <FormSeccionStyled>
           <FormReservation

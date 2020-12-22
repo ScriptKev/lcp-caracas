@@ -160,6 +160,7 @@ export const PraySectionStyled = styled.section`
                             'versicle';
     row-gap: 10px;
     padding-top: 0;
+    padding-bottom: 60px;
 
     & .home__pray--title {
       margin-top: 70px;
