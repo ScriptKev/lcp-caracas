@@ -24,7 +24,7 @@ const customStyles = {
 
 export default function Reservaciones() {
   const router = useRouter()
-  const [reservationsStatus, setReservationsStatus] = useState(true)
+  const [reservationsStatus, setReservationsStatus] = useState(false)
   const [windowDimension, setWindowDimension] = useState(null);
   const [totalReservationsFirstService, setTotalReservationsFirstService] = useState(0)
   const [totalReservationsSecondService, setTotalReservationsSecondService] = useState(0)
