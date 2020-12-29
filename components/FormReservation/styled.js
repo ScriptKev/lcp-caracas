@@ -134,7 +134,7 @@ export const CustomSelect = styled.div`
 
 export const ChipErrorStyled = {
   Container: styled.div`
-    width: 110px;
+    width: 125px;
     height: min-content;
     margin: 10px 0;
     padding: 5px;
@@ -150,6 +150,6 @@ export const ChipErrorStyled = {
 
   Title: styled.span`
     color: #f44336;
-    font-size:0.8rem
+    font-size: 0.8rem
   `
 }
