@@ -1,13 +1,12 @@
-import React from 'react'
-import styled from '@emotion/styled'
-import { Global, css } from '@emotion/react'
+import styled from 'styled-components'
+import { createGlobalStyle } from 'styled-components'
 
 const AppLayoutStyled = styled.div`
   width: 100%;
   height: 100%;
 `
 
-const GlobalStyled = () => <Global styles={css`
+const GlobalStyled = createGlobalStyle`
   @font-face {
     font-family: "Helvetica Neue";
     src: url("/fonts/Helvetica-Neue/HelveticaNeue-Black.otf");
@@ -86,7 +85,6 @@ const GlobalStyled = () => <Global styles={css`
   li {
     list-style: none;
   }
-`} />
-
+`
 
 export { AppLayoutStyled, GlobalStyled }

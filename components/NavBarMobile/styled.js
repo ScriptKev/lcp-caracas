@@ -1,5 +1,4 @@
-// @ts-nocheck
-import styled from '@emotion/styled'
+import styled from 'styled-components'
 
 export const NavBar = {
   Wrapper: styled.nav`
@@ -20,7 +19,7 @@ export const NavBar = {
   `,
 }
 
-export const NavBarMobile = {
+export const NavBarMobileStyled = {
   Wrapper: styled(NavBar.Wrapper)`
     position: fixed;
     width: 100vw;
@@ -46,21 +45,20 @@ export const NavBarMobile = {
     align-items: center;
     font-size: 13px;
     transition: all ease-in-out 150ms;
-
-    &:hover, &:active, &:focus {
-      color: ${({ className, theme }) => className === 'active' ? 'white' : theme.colors.secondary};
+    &:hover,
+    &:active,
+    &:focus {
+      color: ${({ className, theme }) =>
+      className === 'active' ? 'white' : theme.colors.secondary};
     }
-
     &.active {
-      background-color:${({ className }) => {
+      background-color: ${({ className }) => {
       if (className) return '#FFC000'
     }};
-
       border-radius: 10px;
       padding-top: 5px;
       padding-bottom: 5px;
     }
-
     & a {
       display: flex;
       width: 100%;

@@ -1,20 +1,20 @@
-import HeaderHome from 'components/HeaderHome'
 import { useEffect, useState } from 'react'
+import HeaderHome from 'components/HeaderHome'
 import MainHome from 'components/MainHome'
 import NavBar from 'components/NavBar'
 import NavBarMobile from 'components/NavBarMobile'
 import Head from 'next/head'
 
 export default function Home() {
-  const [windowDimension, setWindowDimension] = useState(null);
-  const isMobile = windowDimension <= 640;
+  const [windowDimension, setWindowDimension] = useState(null)
+  const isMobile = windowDimension <= 640
 
   const handleResize = () => setWindowDimension(window.innerWidth)
 
   useEffect(() => {
+    window.addEventListener('resize', handleResize)
     handleResize()
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+    return () => window.removeEventListener('resize', handleResize)
   }, [])
 
   return (

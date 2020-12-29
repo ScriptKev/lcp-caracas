@@ -1,5 +1,4 @@
-// @ts-nocheck
-import styled from '@emotion/styled'
+import styled from 'styled-components'
 
 export const FormStyled = styled.form`
   min-width: 300px;
@@ -12,7 +11,6 @@ export const FormContainerStyled = styled.div`
   height: 100%;
   padding: 15px;
   width: 100%;
-
   & > label {
     font-size: 0.9rem;
   }
@@ -32,25 +30,22 @@ export const InputTextStyled = styled.input`
   font-size: 0.9rem;
   font-family: 'Helvetica Neue';
   font-weight: 500;
-
-  &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  &::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #c9c9c9;
     opacity: 1; /* Firefox */
     font-family: 'Helvetica Neue';
     font-weight: 500;
   }
-
-  &:focus{
+  &:focus {
     border: none;
     box-shadow: 1px 1px 5px ${({ theme }) => theme.shadows.primary};
     outline: none;
   }
-
   &:-internal-autofill-selected {
-  background-color: #1a5187;
-  color: white;
-}
-
+    background-color: #1a5187;
+    color: white;
+  }
   &:-webkit-autofill,
   &:-webkit-autofill:hover,
   &:-webkit-autofill:focus,
@@ -71,9 +66,8 @@ export const FieldRadioStyled = styled.div`
   width: 100%;
   margin-top: 10px;
   height: min-content;
-
   & label {
-    font-family: "Helvetica Neue";
+    font-family: 'Helvetica Neue';
     font-weight: normal;
   }
 `
@@ -83,7 +77,6 @@ export const InputRadioStyled = styled.input`
   height: 20px;
   width: 20px;
   cursor: pointer;
-
   &:after {
     width: 20px;
     height: 20px;
@@ -97,7 +90,6 @@ export const InputRadioStyled = styled.input`
     visibility: visible;
     border: 2px solid white;
   }
-
   &:checked:after {
     width: 20px;
     height: 20px;
@@ -111,11 +103,9 @@ export const InputRadioStyled = styled.input`
     visibility: visible;
     border: 2px solid white;
   }
-
   &:focus {
     outline: none;
   }
-
   &:focus:after,
   &:hover:after {
     box-shadow: 1px 1px 5px ${({ theme }) => theme.shadows.primary};
@@ -129,7 +119,6 @@ export const ErrorMsgStyled = styled.small`
 export const CustomSelect = styled.div`
   height: 100%;
   max-width: 300px;
-
   & select {
     width: 100%;
   }

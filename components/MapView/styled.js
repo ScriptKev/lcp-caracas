@@ -1,5 +1,4 @@
-// @ts-nocheck
-import styled from '@emotion/styled'
+import styled from 'styled-components'
 
 export const MapViewStyled = styled.div`
   width: 100%;

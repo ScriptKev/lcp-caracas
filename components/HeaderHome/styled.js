@@ -1,4 +1,4 @@
-import styled from '@emotion/styled'
+import styled from 'styled-components'
 
 export const HeaderStyled = styled.header`
   min-height: 100vh;
@@ -12,7 +12,7 @@ export const HeaderStyled = styled.header`
   align-items: center;
 
   & h1 {
-    font-family: "Helvetica Neue";
+    font-family: 'Helvetica Neue';
     font-weight: black;
     color: whitesmoke;
     font-size: 6rem;
@@ -20,7 +20,7 @@ export const HeaderStyled = styled.header`
   }
 
   & h2 {
-    font-family: "Helvetica Neue";
+    font-family: 'Helvetica Neue';
     font-weight: 500;
     color: white;
     display: flex;
@@ -28,9 +28,7 @@ export const HeaderStyled = styled.header`
     letter-spacing: 7.2px;
   }
 
-
   @media (max-width: 768px) {
-
     h1 {
       font-size: 3rem;
       text-align: center;
@@ -63,7 +61,7 @@ export const SloganStyled = styled.div`
   background-color: #1e478d99;
   border-radius: 3px;
   padding: 5px 10px;
-      margin-top: 20px;
+  margin-top: 20px;
 
   @media (max-width: 425px) {
     & h2 {
