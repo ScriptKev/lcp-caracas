@@ -12,6 +12,8 @@ export const ModalStyled = {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Helvetica Neue';
+    font-weight: normal;
   `,
 
   Box: styled.div`

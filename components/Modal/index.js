@@ -13,7 +13,7 @@ const Modal = ({ userTicket, closeModal }) => {
   return (
     <ModalStyled.Container>
       <ModalStyled.Box>
-        <span style={{ fontSize: '25px', color: '#1a5187', marginBottom: '10px' }}>
+        <span style={{ fontSize: '23px', color: '#1a5187', marginBottom: '10px' }}>
           ¡Reservación Exitosa!
         <br />
           <img
