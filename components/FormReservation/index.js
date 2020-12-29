@@ -7,6 +7,7 @@ import FieldInput from './FieldInput'
 import Select from 'react-select'
 import { AddReservation } from 'services/googleApi'
 import { ModalContext } from 'context/ModalContext'
+import ChipError from './chipError'
 
 const FormReservation = ({ totalReservationsFirstService, totalReservationsSecondService }) => {
   const [openModal, , loadingModal, modalData] = useContext(ModalContext)
@@ -107,12 +108,12 @@ const FormReservation = ({ totalReservationsFirstService, totalReservationsSecon
         )}
 
         <br />
-        {totalReservationsFirstService >= 100 ? (
-          <span style={{ color: 'red', marginBottom: '10px' }}>
-            Primer Servicio - Reservaciones Acabadas
-          </span>
-        ) : (
-            <FieldInput
+        {
+          totalReservationsFirstService >= 100
+            ? <div style={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'center' }}>
+              <p style={{ marginRight: '5px' }}>1° Servicio</p> <ChipError title='No disponible' />
+            </div>
+            : <FieldInput
               value="Primer Servicio"
               name="worshipShedule"
               id="worshipShedule__First"
@@ -121,14 +122,14 @@ const FormReservation = ({ totalReservationsFirstService, totalReservationsSecon
               type="radio"
               labelTitle="1° Servicio 9:00 a.m."
             />
-          )}
-
-        {totalReservationsSecondService >= 100 ? (
-          <span style={{ color: 'red', marginTop: '10px' }}>
-            Segundo Servicio - Reservaciones Acabadas
-          </span>
-        ) : (
-            <FieldInput
+        }
+        {
+          totalReservationsSecondService >= 100
+            ?
+            <div style={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'center' }}>
+              <p style={{ marginRight: '5px' }}>2° Servicio</p> <ChipError title='No disponible' />
+            </div>
+            : <FieldInput
               value="Segundo Servicio"
               name="worshipShedule"
               id="worshipShedule__Second"
@@ -137,7 +138,7 @@ const FormReservation = ({ totalReservationsFirstService, totalReservationsSecon
               type="radio"
               labelTitle="2° Servicio 11:00 a.m."
             />
-          )}
+        }
         {errors.worshipShedule && (
           <ErrorMsgStyled>{errors.worshipShedule.message}</ErrorMsgStyled>
         )}

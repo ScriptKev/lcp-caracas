@@ -5,6 +5,14 @@ export const FormStyled = styled.form`
   max-width: 500px;
   width: min-content;
   height: 100%;
+
+  & {
+    font-family: 'Helvetica Neue';
+  }
+
+  @media screen and (min-width: 425px) {
+    width: 400px;
+  }
 `
 
 export const FormContainerStyled = styled.div`
@@ -23,7 +31,7 @@ export const InputTextStyled = styled.input`
   border-radius: 3px;
   min-width: 280px;
   height: 40px;
-  max-width: 300px;
+  width: 100%;
   padding: 5px 10px;
   width: 100%;
   margin: 10px 0;
@@ -123,3 +131,25 @@ export const CustomSelect = styled.div`
     width: 100%;
   }
 `
+
+export const ChipErrorStyled = {
+  Container: styled.div`
+    width: 110px;
+    height: min-content;
+    margin: 10px 0;
+    padding: 5px;
+    background-color: transparent;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #f44336;
+    font-family: 'Helvetica Neue';
+    font-weight: normal;
+  `,
+
+  Title: styled.span`
+    color: #f44336;
+    font-size:0.8rem
+  `
+}
