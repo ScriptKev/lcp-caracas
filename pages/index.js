@@ -12,6 +12,7 @@ export default function Home() {
   const handleResize = () => setWindowDimension(window.innerWidth)
 
   useEffect(() => {
+    window.scrollTo(0, 0)
     window.addEventListener('resize', handleResize)
     handleResize()
     return () => window.removeEventListener('resize', handleResize)

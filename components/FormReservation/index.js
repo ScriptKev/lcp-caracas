@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useContext } from 'react'
 import { Controller, useForm } from 'react-hook-form'
 import Button from 'components/Button'
 import { ErrorMsgStyled, FormContainerStyled, FormStyled } from './styled'
@@ -6,12 +6,12 @@ import rules from './rulesConfig'
 import FieldInput from './FieldInput'
 import Select from 'react-select'
 import { AddReservation } from 'services/googleApi'
+import { ModalContext } from 'context/ModalContext'
 
-const FormReservation = ({
-  openModal,
-  totalReservationsFirstService,
-  totalReservationsSecondService,
-}) => {
+const FormReservation = ({ totalReservationsFirstService, totalReservationsSecondService }) => {
+  const [openModal, , loadingModal, modalData] = useContext(ModalContext)
+  const [disableBtn, setDisableBtn] = useState(false)
+  const { control, register, handleSubmit, errors, reset } = useForm()
   const options = [
     { value: '1', label: '1' },
     { value: '2', label: '2' },
@@ -24,16 +24,17 @@ const FormReservation = ({
     { value: '9', label: '9' },
     { value: '10', label: '10' },
   ]
-  const [loading, setLoading] = useState(false)
-  const { control, register, handleSubmit, errors } = useForm()
 
   const onSubmit = (data, e) => {
-    setLoading(true)
-    AddReservation(data).then(() => {
-      e.target.reset()
-      setLoading(false)
-      openModal()
-    })
+    setDisableBtn(true)
+    loadingModal()
+    AddReservation(data)
+      .then(() => {
+        reset()
+        setDisableBtn(false)
+        modalData(data)
+        openModal()
+      })
   }
 
   if (
@@ -150,7 +151,7 @@ const FormReservation = ({
             alignItems: 'center',
           }}
         >
-          <Button disabled={loading} type="submit" title="Reservar" primary />
+          <Button disabled={disableBtn} type='submit' title="Reservar" primary />
         </div>
       </FormContainerStyled>
     </FormStyled>
