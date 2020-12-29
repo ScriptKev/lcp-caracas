@@ -2,10 +2,10 @@ import styled from 'styled-components'
 
 export const FirstSectionStyled = styled.section`
   height: 100vh;
-  background-image: url('/img/Pared-Ladrillos-min.webp');
+  /* background-image: url('/img/Pared-Ladrillos-min.webp');
   background-repeat: no-repeat;
   background-size: cover;
-  text-align: center;
+  text-align: center; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -44,11 +44,31 @@ export const FirstSectionStyled = styled.section`
   }
 `
 
+export const FirstSectionBg = styled.div`
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+
+  & > div {
+    height: 100vh;
+  }
+`
+
+export const PraySectionBg = styled.div`
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+
+  & > div {
+    height: 100vh;
+  }
+`
+
+
 export const PraySectionStyled = styled.section`
   height: 100vh;
-  background-image: url('/img/Oracion-min.webp');
-  background-repeat: no-repeat;
-  background-size: cover;
   text-align: center;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -151,6 +171,7 @@ export const PraySectionStyled = styled.section`
       font-style: italic;
     }
   }
+
   @media (min-width: 320px) and (max-width: 767px) {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;

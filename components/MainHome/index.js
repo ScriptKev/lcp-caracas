@@ -1,9 +1,21 @@
-import { FirstSectionStyled, PraySectionStyled } from './styled'
+import Image from 'next/image'
+import { FirstSectionBg, FirstSectionStyled, PraySectionBg, PraySectionStyled } from './styled'
 
 const MainHome = () => {
   return (
     <main>
       <FirstSectionStyled>
+        <FirstSectionBg>
+          <Image
+            src="/img/Pared-Ladrillos-min.webp"
+            alt='#Quedate En Casa'
+            width={1920}
+            height={1080}
+            loading='lazy'
+            objectFit="cover"
+            quality={100}
+          />
+        </FirstSectionBg>
         <div className="main__container">
           <div className="main__mainText">
             <h2>
@@ -17,6 +29,17 @@ const MainHome = () => {
       </FirstSectionStyled>
 
       <PraySectionStyled>
+        <PraySectionBg>
+          <Image
+            src="/img/Oracion-min.webp"
+            alt='Peticion de oración'
+            width={1920}
+            height={1080}
+            loading='lazy'
+            objectFit="cover"
+            quality={100}
+          />
+        </PraySectionBg>
         <div className="home__pray--CTA">
           <button>
             Peticiones

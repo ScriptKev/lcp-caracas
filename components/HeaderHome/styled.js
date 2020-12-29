@@ -2,10 +2,6 @@ import styled from 'styled-components'
 
 export const HeaderStyled = styled.header`
   min-height: 100vh;
-  background-image: url('/img/HeaderBg.webp');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -38,6 +34,17 @@ export const HeaderStyled = styled.header`
       letter-spacing: 1px;
       font-size: 1.1rem;
     }
+  }
+`
+
+export const HeaderBg = styled.div`
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+
+  & > div {
+    height: 100vh;
   }
 `
 
