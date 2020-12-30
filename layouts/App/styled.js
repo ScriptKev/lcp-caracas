@@ -1,18 +1,42 @@
-import React from 'react'
-import styled from '@emotion/styled'
-import { Global, css } from '@emotion/react'
+import styled from 'styled-components'
+import { createGlobalStyle } from 'styled-components'
 
 const AppLayoutStyled = styled.div`
   width: 100%;
   height: 100%;
+  /* overflow: hidden; */
 `
 
-const GlobalStyled = () => <Global styles={css`
+const GlobalStyled = createGlobalStyle`
+  @font-face {
+    font-family: "Helvetica Neue";
+    src: url("/fonts/Helvetica-Neue/HelveticaNeue-BlackCond.otf");
+    font-style: blackCon;
+    font-weight: 1000;
+    font-display: swap;
+  }
+
   @font-face {
     font-family: "Helvetica Neue";
     src: url("/fonts/Helvetica-Neue/HelveticaNeue-Black.otf");
     font-style: black;
     font-weight: 900;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Helvetica Neue";
+    src: url("/fonts/Helvetica-Neue/HelveticaNeue-LightExt.otf");
+    font-style: light;
+    font-weight: 200;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Helvetica Neue";
+    src: url("/fonts/Helvetica-Neue/HelveticaNeue-ThinCond.otf");
+    font-style: lightThin;
+    font-weight: 100;
     font-display: swap;
   }
 
@@ -86,7 +110,6 @@ const GlobalStyled = () => <Global styles={css`
   li {
     list-style: none;
   }
-`} />
-
+`
 
 export { AppLayoutStyled, GlobalStyled }

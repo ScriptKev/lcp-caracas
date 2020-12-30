@@ -10,8 +10,7 @@ const MapView = () => {
         center={{ lat: 10.502159125755705, lng: -66.90064118922413 }}
         zoom={18}
         scrollWheelZoom={false}
-        id='mapView'
-
+        id="mapView"
       >
         <TileLayer
           attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'

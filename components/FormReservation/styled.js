@@ -1,18 +1,24 @@
-// @ts-nocheck
-import styled from '@emotion/styled'
+import styled from 'styled-components'
 
 export const FormStyled = styled.form`
   min-width: 300px;
   max-width: 500px;
   width: min-content;
   height: 100%;
+
+  & {
+    font-family: 'Helvetica Neue';
+  }
+
+  @media screen and (min-width: 425px) {
+    width: 400px;
+  }
 `
 
 export const FormContainerStyled = styled.div`
   height: 100%;
   padding: 15px;
   width: 100%;
-
   & > label {
     font-size: 0.9rem;
   }
@@ -25,32 +31,29 @@ export const InputTextStyled = styled.input`
   border-radius: 3px;
   min-width: 280px;
   height: 40px;
-  max-width: 300px;
+  width: 100%;
   padding: 5px 10px;
   width: 100%;
   margin: 10px 0;
   font-size: 0.9rem;
   font-family: 'Helvetica Neue';
   font-weight: 500;
-
-  &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  &::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #c9c9c9;
     opacity: 1; /* Firefox */
     font-family: 'Helvetica Neue';
     font-weight: 500;
   }
-
-  &:focus{
+  &:focus {
     border: none;
     box-shadow: 1px 1px 5px ${({ theme }) => theme.shadows.primary};
     outline: none;
   }
-
   &:-internal-autofill-selected {
-  background-color: #1a5187;
-  color: white;
-}
-
+    background-color: #1a5187;
+    color: white;
+  }
   &:-webkit-autofill,
   &:-webkit-autofill:hover,
   &:-webkit-autofill:focus,
@@ -71,9 +74,8 @@ export const FieldRadioStyled = styled.div`
   width: 100%;
   margin-top: 10px;
   height: min-content;
-
   & label {
-    font-family: "Helvetica Neue";
+    font-family: 'Helvetica Neue';
     font-weight: normal;
   }
 `
@@ -83,7 +85,6 @@ export const InputRadioStyled = styled.input`
   height: 20px;
   width: 20px;
   cursor: pointer;
-
   &:after {
     width: 20px;
     height: 20px;
@@ -97,7 +98,6 @@ export const InputRadioStyled = styled.input`
     visibility: visible;
     border: 2px solid white;
   }
-
   &:checked:after {
     width: 20px;
     height: 20px;
@@ -111,11 +111,9 @@ export const InputRadioStyled = styled.input`
     visibility: visible;
     border: 2px solid white;
   }
-
   &:focus {
     outline: none;
   }
-
   &:focus:after,
   &:hover:after {
     box-shadow: 1px 1px 5px ${({ theme }) => theme.shadows.primary};
@@ -129,8 +127,29 @@ export const ErrorMsgStyled = styled.small`
 export const CustomSelect = styled.div`
   height: 100%;
   max-width: 300px;
-
   & select {
     width: 100%;
   }
 `
+
+export const ChipErrorStyled = {
+  Container: styled.div`
+    width: 125px;
+    height: min-content;
+    margin: 10px 0;
+    padding: 5px;
+    background-color: transparent;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #f44336;
+    font-family: 'Helvetica Neue';
+    font-weight: normal;
+  `,
+
+  Title: styled.span`
+    color: #f44336;
+    font-size: 0.8rem
+  `
+}

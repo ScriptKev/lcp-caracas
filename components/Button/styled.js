@@ -1,5 +1,5 @@
 // @ts-nocheck
-import styled from '@emotion/styled'
+import styled from 'styled-components'
 
 export const ButtonStyled = styled.button`
   transition: filter ease-in-out 300ms;
@@ -21,13 +21,13 @@ export const ButtonStyled = styled.button`
     if (!secondary && !secondary) return 'blueviolet'
   }};
 
-  &:disabled, [disabled]{
-  border: 1px solid #999999;
-  background-color: #cccccc;
-  color: #666666;
-  cursor: not-allowed;
+  &:disabled,
+  [disabled] {
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+    cursor: not-allowed;
   }
-
 
   &:hover {
     filter: opacity(95%);
@@ -39,6 +39,6 @@ export const ButtonStyled = styled.button`
   }
 
   &:active {
-    transform: scale(0.9)
+    transform: scale(0.9);
   }
 `

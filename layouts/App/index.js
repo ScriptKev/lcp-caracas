@@ -1,16 +1,13 @@
-import PropTypes from 'prop-types'
+import ThemeSnow from './ThemeSnow'
 import { GlobalStyled, AppLayoutStyled } from './styled'
 export default function AppLayout({ children }) {
   return (
     <>
       <AppLayoutStyled>
+        <ThemeSnow />
         <GlobalStyled />
         {children}
       </AppLayoutStyled>
     </>
   )
-}
-
-AppLayout.propTypes = {
-  children: PropTypes.array.isRequired
 }

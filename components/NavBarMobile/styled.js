@@ -1,13 +1,17 @@
-// @ts-nocheck
-import styled from '@emotion/styled'
+import styled from 'styled-components'
 
 export const NavBar = {
   Wrapper: styled.nav`
+    opacity: 0;
     flex: 1;
     align-self: flex-start;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media screen and (max-width: 640px) {
+      opacity: 1;
+    }
   `,
   Items: styled.ul`
     display: flex;
@@ -20,7 +24,7 @@ export const NavBar = {
   `,
 }
 
-export const NavBarMobile = {
+export const NavBarMobileStyled = {
   Wrapper: styled(NavBar.Wrapper)`
     position: fixed;
     width: 100vw;
@@ -29,7 +33,7 @@ export const NavBarMobile = {
     box-shadow: 0px -4px 10px #00000029;
     justify-content: center;
     border-radius: 10px 10px 0 0;
-    background-color: #2186ff9c;
+    background-color: #1e478dcc;
   `,
   Items: styled(NavBar.Items)`
     display: grid;
@@ -46,21 +50,23 @@ export const NavBarMobile = {
     align-items: center;
     font-size: 13px;
     transition: all ease-in-out 150ms;
-
-    &:hover, &:active, &:focus {
-      color: ${({ className, theme }) => className === 'active' ? 'white' : theme.colors.secondary};
+    &:hover,
+    &:active,
+    &:focus {
+      color: ${({ className, theme }) =>
+      className === 'active' ? 'white' : theme.colors.secondary};
     }
-
     &.active {
-      background-color:${({ className }) => {
+      background-color: ${({ className }) => {
       if (className) return '#FFC000'
     }};
-
+    color: ${({ className, theme }) => {
+      if (className) return theme.colors.primary
+    }};
       border-radius: 10px;
       padding-top: 5px;
       padding-bottom: 5px;
     }
-
     & a {
       display: flex;
       width: 100%;
@@ -69,7 +75,7 @@ export const NavBarMobile = {
       align-items: center;
       flex-direction: column;
       font-family: 'Helvetica Neue';
-      font-weight: 300;
+      font-weight: 400;
     }
   `,
   Icon: styled.span``,
