@@ -33,9 +33,9 @@ export const Navidad = {
 
   Mark: styled.p`
     text-shadow: 1px 1px 5px black;
-    font-weight: 100;
+    font-weight: 400;
     font-size: 15px;
-    letter-spacing: 10px;
+    letter-spacing: 7px;
     text-transform: uppercase;
     margin-top: 20px;
   `,
