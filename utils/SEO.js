@@ -14,8 +14,11 @@ const SEO = ({ children }) => {
         <meta name="robots" content="follow" />
 
         <link rel="preload" href="/fonts/Helvetica-Neue/HelveticaNeue-MediumExtObl.otf" as="font" crossOrigin="" />
+        <link rel="preload" href="/fonts/Helvetica-Neue/HelveticaNeue-BlackCond.otf" as="font" crossOrigin="" />
         <link rel="preload" href="/fonts/Helvetica-Neue/HelveticaNeue-Black.otf" as="font" crossOrigin="" />
         <link rel="preload" href="/fonts/Helvetica-Neue/HelveticaNeue-Extended.otf" as="font" crossOrigin="" />
+        <link rel="preload" href="/fonts/Helvetica-Neue/HelveticaNeue-LightExt.otf" as="font" crossOrigin="" />
+        <link rel="preload" href="/fonts/Helvetica-Neue/HelveticaNeue-ThinCond.otf" as="font" crossOrigin="" />
 
         <meta property="og:site_name" content="La Casa de mi Padre - Donde todos tienen un lugar" />
         <meta property="og:type" content="website" />

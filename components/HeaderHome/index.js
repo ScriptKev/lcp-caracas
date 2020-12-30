@@ -20,7 +20,7 @@ const HeaderHome = () => {
           className="header__title"
           style={{ margin: 'auto', textAlign: 'start' }}
         >
-          <h1>
+          <h1 style={{ textShadow: '1px 1px 7px black' }}>
             La Casa
             <br /> de mi Padre
           </h1>

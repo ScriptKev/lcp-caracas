@@ -30,6 +30,8 @@ export const NavStyled = styled.nav`
   }
   & .route__reservations {
     color: ${({ light }) => (light ? '#1a5187' : 'white')};
+    text-shadow: ${({ light }) => (!light && '1px 1px 5px black')};
+
     @media screen and (max-width: 425px) {
       font-size: 0.9rem;
     }
@@ -45,6 +47,7 @@ export const ContainerStyled = styled.div`
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
+
   @media screen and (min-width: 320px) and (max-width: 467px) {
     padding: 0 15px;
   }

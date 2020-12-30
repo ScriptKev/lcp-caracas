@@ -18,6 +18,7 @@ const NavBar = ({ light, onlyFlag = false }) => {
                 alt="Picture of the author"
                 width={65}
                 height={36}
+                priority
               />
             </a>
           </Link>
@@ -32,7 +33,7 @@ const NavBar = ({ light, onlyFlag = false }) => {
                   style={{
                     border: '2.5px solid #FFC000',
                     borderRadius: '20px',
-                    padding: '5px',
+                    padding: '5px'
                   }}
                 >
                   Reservaciones

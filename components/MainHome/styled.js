@@ -80,7 +80,6 @@ export const PraySectionStyled = styled.section`
   align-items: center;
   column-gap: 20px;
   row-gap: 20px;
-  padding-top: 100px;
 
   & .home__pray--CTA {
     grid-area: cta;

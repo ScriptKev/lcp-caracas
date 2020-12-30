@@ -28,7 +28,7 @@ export const NavBarMobileStyled = {
     box-shadow: 0px -4px 10px #00000029;
     justify-content: center;
     border-radius: 10px 10px 0 0;
-    background-color: #2186ff9c;
+    background-color: #1e478dcc;
   `,
   Items: styled(NavBar.Items)`
     display: grid;
@@ -55,6 +55,9 @@ export const NavBarMobileStyled = {
       background-color: ${({ className }) => {
       if (className) return '#FFC000'
     }};
+    color: ${({ className, theme }) => {
+      if (className) return theme.colors.primary
+    }};
       border-radius: 10px;
       padding-top: 5px;
       padding-bottom: 5px;
@@ -67,7 +70,7 @@ export const NavBarMobileStyled = {
       align-items: center;
       flex-direction: column;
       font-family: 'Helvetica Neue';
-      font-weight: 300;
+      font-weight: 400;
     }
   `,
   Icon: styled.span``,
