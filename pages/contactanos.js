@@ -34,14 +34,10 @@ export default function Contactanos() {
 
       {
         isMobile
-          ?
-          <>
-            <NavBar onlyFlag />
-            <NavBarMobile />
-          </>
-          :
-          <NavBar light />
+          ? <NavBar onlyFlag />
+          : <NavBar light />
       }
+      <NavBarMobile />
 
       <MainStyled>
         <GridStyled>

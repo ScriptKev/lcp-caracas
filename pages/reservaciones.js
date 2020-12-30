@@ -5,15 +5,6 @@ import ReservacionesNavidad from 'layouts/Pages/reservaciones-navidad'
 
 export default function Reservaciones() {
   const [windowDimension, setWindowDimension] = useState(null)
-  const isMobile = windowDimension <= 640
-
-  const handleResize = () => setWindowDimension(window.innerWidth)
-
-  useEffect(() => {
-    window.addEventListener('resize', handleResize)
-    handleResize()
-    return () => window.removeEventListener('resize', handleResize)
-  }, [])
 
   return (
     <div>
@@ -29,7 +20,7 @@ export default function Reservaciones() {
         />
       </Head>
 
-      {isMobile && <NavBarMobile />}
+      <NavBarMobile />
       <ReservacionesNavidad />
     </div>
   )

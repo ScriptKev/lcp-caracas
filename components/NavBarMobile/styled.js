@@ -2,11 +2,16 @@ import styled from 'styled-components'
 
 export const NavBar = {
   Wrapper: styled.nav`
+    opacity: 0;
     flex: 1;
     align-self: flex-start;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media screen and (max-width: 640px) {
+      opacity: 1;
+    }
   `,
   Items: styled.ul`
     display: flex;

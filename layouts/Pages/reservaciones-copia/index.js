@@ -51,7 +51,8 @@ export default function Reservaciones() {
         />
       </Head>
 
-      {isMobile ? <NavBarMobile /> : <NavBar light />}
+      <NavBar light />
+      <NavBarMobile />
       <main
         style={{
           paddingTop: isMobile ? '20px' : '130px',

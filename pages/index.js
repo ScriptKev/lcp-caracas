@@ -26,14 +26,12 @@ export default function Home() {
       </Head>
 
       {
-        isMobile ?
-          <>
-            <NavBar onlyFlag />
-            <NavBarMobile />
-          </>
-          :
-          <NavBar />
+        isMobile
+          ? <NavBar onlyFlag />
+          : <NavBar />
       }
+
+      <NavBarMobile />
       <HeaderHome />
       <MainHome />
     </>
