@@ -51,7 +51,7 @@ export default function Reservaciones() {
         />
       </Head>
 
-      <NavBar light />
+      {/* <NavBar light onlyFlag /> */}
       <NavBarMobile />
       <main
         style={{
