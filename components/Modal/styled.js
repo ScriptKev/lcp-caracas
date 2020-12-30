@@ -6,7 +6,7 @@ export const ModalStyled = {
     height: 100vh;
     width: 100vw;
     padding: 0 10px;
-    z-index: 1001;
+    z-index: 1015;
     background-color: #00000024;
     backdrop-filter: blur(2px);
     display: flex;

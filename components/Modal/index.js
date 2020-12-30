@@ -5,8 +5,8 @@ import { ModalStyled } from './styled'
 const Modal = ({ userTicket, closeModal }) => {
 
   const worshipSheduleDate = Shedule => {
-    if (Shedule === 'Primer Servicio') return '9:00 a.m'
-    if (Shedule === 'Segundo Servicio') return '9:00 a.m'
+    if (Shedule === 'Primer Servicio') return '1° Servicio 9:00 a.m'
+    if (Shedule === 'Segundo Servicio') return '2° Servicio 11:00 a.m'
     else return 'Hubo un error en el horario'
   }
 
@@ -27,7 +27,7 @@ const Modal = ({ userTicket, closeModal }) => {
           <span>{userTicket.fullName}</span> <br />
           <span>N° Reservaciones: {userTicket.reservations}</span> <br />
           <span>
-            {userTicket.worshipShedule} {worshipSheduleDate(userTicket.worshipShedule)}
+            {worshipSheduleDate(userTicket.worshipShedule)}
           </span>
           <br />
         </div>

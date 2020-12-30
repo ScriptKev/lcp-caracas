@@ -7,7 +7,7 @@ import FieldInput from './FieldInput'
 import Select from 'react-select'
 import { AddReservation } from 'services/googleApi'
 import { ModalContext } from 'context/ModalContext'
-import ChipError from './chipError'
+import ChipError from './ChipError'
 
 const FormReservation = ({ totalReservationsFirstService, totalReservationsSecondService }) => {
   const [openModal, , loadingModal, modalData] = useContext(ModalContext)
