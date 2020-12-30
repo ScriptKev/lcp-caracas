@@ -1,17 +1,15 @@
 // @ts-nocheck
-import styled from '@emotion/styled'
+import styled from 'styled-components'
 
 export const NavStyled = styled.nav`
   background: transparent;
   height: 120px;
   width: 100%;
-  color: ${({ theme }) => theme.colors.primary};
   position: absolute;
-  font-family: "Helvetica Neue";
+  font-family: 'Helvetica Neue';
   font-weight: 500;
-
   & .route__contact {
-    color: ${({ light }) => light ? '#1a5187' : 'white'};
+    color: ${({ light }) => (light ? '#1a5187' : 'white')};
     position: relative;
     display: inline-block;
     -webkit-touch-callout: none; /* iOS Safari */
@@ -20,55 +18,19 @@ export const NavStyled = styled.nav`
     -moz-user-select: none; /* Old versions of Firefox */
     -ms-user-select: none; /* Internet Explorer/Edge */
     user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
-
     &:hover {
-      color: #FFC000;
+      color: #ffc000;
     }
-
-    & .tiptext {
-      visibility: hidden;
-      width: 120px;
-      color: ${({ theme }) => theme.colors.secondary};
-      text-align: center;
-      border-radius: 3px;
-      padding: 6px 0;
-      position: absolute;
-      z-index: 1;
-      font-size: 12px;
-    }
-
-    & .tiptext::after {
-      position: absolute;
-      border-width: 5px;
-      border-style: solid;
-    }
-    &:hover .tiptext {
-        visibility: visible;
-    }
-
-    & .tiptext{
-      margin-left: -60px;
-      top: 150%;
-      left: 50%;
-    }
-
-    & .tiptext::after{
-      margin-left: -5px;
-      bottom: 100%;
-      left: 50%;
-    }
-
     @media screen and (min-width: 320px) and (max-width: 460px) {
-      display: none
+      display: none;
     }
   }
-
   & .route__reservations:hover {
-    color: #FFC000;
+    color: #ffc000;
   }
-
   & .route__reservations {
-    color: ${({ light }) => light ? '#1a5187' : 'white'};
+    color: ${({ light }) => (light ? '#1a5187' : 'white')};
+    text-shadow: ${({ light }) => (!light && '1px 1px 5px black')};
 
     @media screen and (max-width: 425px) {
       font-size: 0.9rem;

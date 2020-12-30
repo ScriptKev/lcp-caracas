@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types'
 import { GlobalStyled, AppLayoutStyled } from './styled'
 export default function AppLayout({ children }) {
   return (
@@ -9,8 +8,4 @@ export default function AppLayout({ children }) {
       </AppLayoutStyled>
     </>
   )
-}
-
-AppLayout.propTypes = {
-  children: PropTypes.array.isRequired
 }
