@@ -48,7 +48,7 @@ export const Snow = styled.div`
 
 .tpl-snow > div{filter: drop-shadow(0 0 10px white);position:fixed;-webkit-animation:ease-in infinite normal;-moz-animation:ease-in infinite normal;animation:ease-in infinite normal;}	
 
-.tpl-snow > div{z-index:9999999999999;width:10px;height:10px;-moz-border-radius:50%;-webkit-border-radius:50%;border-radius:50%;background-color:#fff;-webkit-animation-name:nieve,horiz;-moz-animation-name:nieve,horiz;animation-name:nieve,horiz;}
+.tpl-snow > div{z-index:1005;width:10px;height:10px;-moz-border-radius:50%;-webkit-border-radius:50%;border-radius:50%;background-color:#fff;-webkit-animation-name:nieve,horiz;-moz-animation-name:nieve,horiz;animation-name:nieve,horiz;}
 .tpl-snow > div:nth-of-type(odd){width:5px; height:5px;-webkit-animation-name:nieve,horiz2;-moz-animation-name:nieve,horiz2;animation-name:nieve,horiz2;}
 
 .tpl-snow > div:nth-of-type(1){left:40px;-webkit-animation-duration:5.5s;-moz-animation-duration:5.5s;animation-duration:5.5s;-webkit-animation-delay:1s;-moz-animation-delay:1s;animation-delay:1s;}
