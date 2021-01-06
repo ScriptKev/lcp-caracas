@@ -67,7 +67,7 @@ export default function Reservaciones() {
               <FormDescription>
                 <h2>Formulario de Reservaciones</h2>
                 <br />
-                <p>Primer Servicio del Año. <b>Dom 10/01/21</b></p>
+                <p>Primer Servicio del Año. <br /> <b>Dom 10/01/21</b></p>
               </FormDescription>
               <FormSeccionStyled>
                 <FormReservation
