@@ -11,7 +11,7 @@ const MainHome = () => {
             alt='#Quedate En Casa'
             width={1920}
             height={1080}
-            loading='lazy'
+            priority
             objectFit="cover"
             quality={100}
           />
@@ -35,7 +35,7 @@ const MainHome = () => {
             alt='Peticion de oración'
             width={1920}
             height={1080}
-            loading='lazy'
+            priority
             objectFit="cover"
             quality={100}
           />

@@ -21,6 +21,7 @@ export const FormBgStyled = styled.div`
   background-position: center;
   border-radius: 5px;
   box-shadow: 1px 1px 10px ${({ theme }) => theme.shadows.primary};
+
   @media screen and (max-width: 425px) {
     background-image: url(/img/formHeader-27-12-2020.webp);
     height: 250px;
@@ -29,5 +30,18 @@ export const FormBgStyled = styled.div`
   }
   @media screen and (min-width: 375px) and (max-width: 425px) {
     height: 300px;
+  }
+`
+
+export const FormDescription = styled.div`
+  max-width: 600px;
+  width: 100%;
+  margin: auto;
+  height: min-content;
+  text-align: center;
+
+  @media screen and (max-width: 425px) {
+  }
+  @media screen and (min-width: 375px) and (max-width: 425px) {
   }
 `

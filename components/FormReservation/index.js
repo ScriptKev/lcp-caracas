@@ -92,17 +92,19 @@ const FormReservation = ({ totalReservationsFirstService, totalReservationsSecon
           <ErrorMsgStyled>{errors.email.message}</ErrorMsgStyled>
         )}
         <br />
-
-        <Controller
-          instanceId="reservations"
-          name="reservations"
-          control={control}
-          options={options}
-          as={Select}
-          rules={rules.reservations}
-          placeholder="Numero de reservaciones"
-          register={register}
-        />
+        <div style={{ fontSize: '0.9rem' }}>
+          <Controller
+            instanceId="reservations"
+            name="reservations"
+            defaultValue={1}
+            control={control}
+            options={options}
+            as={Select}
+            rules={rules.reservations}
+            placeholder="Numero de reservaciones"
+            register={register}
+          />
+        </div>
         {errors.reservations && (
           <ErrorMsgStyled>{errors.reservations.message}</ErrorMsgStyled>
         )}
