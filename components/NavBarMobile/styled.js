@@ -8,7 +8,6 @@ export const NavBar = {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     @media screen and (max-width: 640px) {
       opacity: 1;
     }
@@ -66,6 +65,13 @@ export const NavBarMobileStyled = {
       border-radius: 10px;
       padding-top: 5px;
       padding-bottom: 5px;
+
+      & a {
+        color: ${({ className, theme }) => {
+      if (className) return theme.colors.primary
+    }};
+        font-weight: 400;
+      }
     }
     & a {
       display: flex;
@@ -75,8 +81,12 @@ export const NavBarMobileStyled = {
       align-items: center;
       flex-direction: column;
       font-family: 'Helvetica Neue';
-      font-weight: 400;
+      font-weight: 200;
+      color: white;
+      letter-spacing: 1.1px;
     }
   `,
-  Icon: styled.span``,
+  Icon: styled.span`
+
+  `,
 }

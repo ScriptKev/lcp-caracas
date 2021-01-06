@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 
 const NavBarItem = ({ to = '/', title, Icon }) => {
+  console.log(Icon)
   const [isActive, setIsActive] = useState(false)
   const router = useRouter()
 

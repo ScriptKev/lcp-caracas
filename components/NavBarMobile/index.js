@@ -9,17 +9,9 @@ export default function NavBarMobile() {
     <>
       <NavBarMobileStyled.Wrapper>
         <NavBarMobileStyled.Items>
-          <NavBarItem
-            to="/reservaciones"
-            Icon={IconReservations}
-            title="Reservaciones"
-          />
+          <NavBarItem to="/reservaciones" Icon={IconReservations} title="Reservaciones" />
           <NavBarItem to="/" Icon={IconHome} title="Inicio" />
-          <NavBarItem
-            to="/contactanos"
-            Icon={IconContact}
-            title="Contactanos"
-          />
+          <NavBarItem to="/contactanos" Icon={IconContact} title="Contactanos" />
         </NavBarMobileStyled.Items>
       </NavBarMobileStyled.Wrapper>
     </>
