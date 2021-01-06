@@ -43,7 +43,7 @@ const NavBar = ({ light, onlyFlag = false }) => {
 
             <span className="route__contact" style={{ marginLeft: '10px' }}>
               <Link href="/contactanos">
-                <a>Contactanos</a>
+                <a>Contáctanos</a>
               </Link>
             </span>
           </div>
