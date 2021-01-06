@@ -5,10 +5,7 @@ export const FormStyled = styled.form`
   max-width: 500px;
   width: min-content;
   height: 100%;
-
-  & {
-    font-family: 'Helvetica Neue';
-  }
+  font-family: 'Helvetica Neue';
 
   @media screen and (min-width: 425px) {
     width: 400px;

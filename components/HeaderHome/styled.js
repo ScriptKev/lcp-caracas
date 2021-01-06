@@ -7,32 +7,57 @@ export const HeaderStyled = styled.header`
   justify-content: center;
   align-items: center;
 
+  & em {
+      color: #FFC000;
+      font-style: normal;
+    }
+
   & h1 {
     font-family: 'Helvetica Neue';
-    font-weight: black;
+    font-weight: 400;
     color: whitesmoke;
-    font-size: 6rem;
+    font-size: 3rem;
+    text-align:center;
     text-shadow: 2px 2px 10px #00000075;
   }
 
   & h2 {
     font-family: 'Helvetica Neue';
-    font-weight: 500;
+    font-weight: 400;
     color: white;
     display: flex;
     justify-content: center;
     letter-spacing: 7.2px;
   }
+  
+  & .header__quote {
+    display: flex;
+    font-family: 'Helvetica Neue';
+    place-content: flex-end;
+    font-weight: 200;
+    font-size: 1.4rem;
+    color: white;
+
+    & > div {
+      color: #FFC000;
+    }
+  }
 
   @media (max-width: 768px) {
     h1 {
-      font-size: 3rem;
+      font-size: 16px;
       text-align: center;
+      font-weight: 400;
+      line-height: 25px;
     }
 
     h2 {
       letter-spacing: 1px;
       font-size: 1.1rem;
+    }
+
+    & .header__quote {
+      font-size: 0.8rem;
     }
   }
 `
@@ -42,6 +67,7 @@ export const HeaderBg = styled.div`
   z-index: -1;
   width: 100%;
   height: 100vh;
+  background: radial-gradient(circle, rgba(30,81,141,0.9220063025210083) 0%, rgb(5 27 63) 100%);
 
   & > div {
     height: 100vh;

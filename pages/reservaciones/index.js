@@ -4,7 +4,7 @@ import { db } from 'services/firebase'
 import NavBar from 'components/NavBar'
 import FormReservation from 'components/FormReservation'
 import NavBarMobile from 'components/NavBarMobile'
-import { FormBgStyled, FormSeccionStyled } from 'layouts/Pages/ReservacionesLayout'
+import { FormSeccionStyled, FormDescription } from 'layouts/Pages/ReservacionesLayout'
 
 export default function Reservaciones() {
   const [reservationsStatus, setReservationsStatus] = useState(true)
@@ -51,18 +51,24 @@ export default function Reservaciones() {
         />
       </Head>
 
-      {/* <NavBar light onlyFlag /> */}
+      <NavBar light onlyFlag />
       <NavBarMobile />
       <main
         style={{
-          paddingTop: isMobile ? '20px' : '130px',
+          // paddingTop: isMobile ? '20px' : '130px',
+          paddingTop: isMobile ? '110px' : '130px',
           paddingBottom: isMobile && '70px',
         }}
       >
         {
           reservationsStatus ?
             <>
-              <FormBgStyled />
+              {/* <FormBgStyled /> */}
+              <FormDescription>
+                <h2>Formulario de Reservaciones</h2>
+                <br />
+                <p>Primer Servicio del Año. <b>Dom 10/01/21</b></p>
+              </FormDescription>
               <FormSeccionStyled>
                 <FormReservation
                   totalReservationsFirstService={totalReservationsFirstService}

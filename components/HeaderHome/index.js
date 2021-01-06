@@ -5,7 +5,7 @@ const HeaderHome = () => {
   return (
     <HeaderStyled>
       <HeaderBg>
-        <Image
+        {/* <Image
           src="/img/HeaderBg.webp"
           alt="headerBg"
           width={1920}
@@ -13,7 +13,7 @@ const HeaderHome = () => {
           priority
           objectFit="cover"
           quality={100}
-        />
+        /> */}
       </HeaderBg>
       <ContainerStyled>
         <div
@@ -21,18 +21,20 @@ const HeaderHome = () => {
           style={{ margin: 'auto', textAlign: 'start' }}
         >
           <h1 style={{ textShadow: '1px 1px 7px black' }}>
-            La Casa
-            <br /> de mi Padre
+            "Que el Dios de la <em>esperanza</em> <br />
+            los llene de toda alegría y paz <br />
+            a ustedes que creen en Él". <br />
           </h1>
+          <div className='header__quote'>Rom. 15:13</div>
 
-          <SloganStyled>
+          {/* <SloganStyled>
             <h2>
               donde
               <div style={{ color: '#FFC000' }}>todos</div>
               tienen
               <div style={{ color: '#FFC000' }}>un</div>lugar
             </h2>
-          </SloganStyled>
+          </SloganStyled> */}
         </div>
       </ContainerStyled>
     </HeaderStyled>
