@@ -96,7 +96,7 @@ const FormReservation = ({ totalReservationsFirstService, totalReservationsSecon
           <Controller
             instanceId="reservations"
             name="reservations"
-            defaultValue={1}
+            defaultValue={{ value: '1', label: 'Numero de reservaciones' }}
             control={control}
             options={options}
             as={Select}
