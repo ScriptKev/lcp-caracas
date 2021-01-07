@@ -5,15 +5,15 @@ const HeaderHome = () => {
   return (
     <HeaderStyled>
       <HeaderBg>
-        {/* <Image
-          src="/img/HeaderBg.webp"
+        <Image
+          src="/img/HeaderBg-enero-2020.webp"
           alt="headerBg"
           width={1920}
           height={1080}
           priority
           objectFit="cover"
           quality={100}
-        /> */}
+        />
       </HeaderBg>
       <ContainerStyled>
         <div
