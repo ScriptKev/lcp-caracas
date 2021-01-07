@@ -1,5 +1,4 @@
 const IconReservations = ({ isActive }) => {
-  console.log(isActive)
   return (
     <>
       <svg
