@@ -45,10 +45,10 @@ export const HeaderStyled = styled.header`
 
   @media (max-width: 768px) {
     h1 {
-      font-size: 16px;
+      font-size: 19px;
       text-align: center;
       font-weight: 400;
-      line-height: 25px;
+      line-height: 30px;
     }
 
     h2 {
@@ -66,6 +66,7 @@ export const HeaderBg = styled.div`
   position: absolute;
   z-index: -1;
   width: 100%;
+  filter: brightness(0.9);
   height: 100vh;
   background: radial-gradient(circle, rgba(30,81,141,0.9220063025210083) 0%, rgb(5 27 63) 100%);
 
@@ -83,6 +84,7 @@ export const ContainerStyled = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
 
   @media (max-width: 425px) {
     padding: 10px 5px 5px 5px;
