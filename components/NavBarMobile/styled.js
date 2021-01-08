@@ -2,15 +2,11 @@ import styled from 'styled-components'
 
 export const NavBar = {
   Wrapper: styled.nav`
-    opacity: 0;
     flex: 1;
     align-self: flex-start;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @media screen and (max-width: 640px) {
-      opacity: 1;
-    }
   `,
   Items: styled.ul`
     display: flex;
@@ -33,6 +29,12 @@ export const NavBarMobileStyled = {
     justify-content: center;
     border-radius: 10px 10px 0 0;
     background-color: #1e478dcc;
+    display: none;
+
+    @media screen and (max-width: 640px) {
+      opacity: 1;
+      display: block;
+    }
   `,
   Items: styled(NavBar.Items)`
     display: grid;
