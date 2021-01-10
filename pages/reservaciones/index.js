@@ -4,10 +4,10 @@ import { db } from 'services/firebase'
 import NavBar from 'components/NavBar'
 import FormReservation from 'components/FormReservation'
 import NavBarMobile from 'components/NavBarMobile'
-import { FormSeccionStyled, FormDescription, FormBgStyled } from 'layouts/Pages/ReservacionesLayout'
+import { FormSeccionStyled, FormBgStyled } from 'layouts/Pages/ReservacionesLayout'
 
 export default function Reservaciones() {
-  const [reservationsStatus, setReservationsStatus] = useState(true)
+  const [reservationsStatus, setReservationsStatus] = useState(false)
   const [windowDimension, setWindowDimension] = useState(null)
   const [totalReservationsFirstService, setTotalReservationsFirstService] = useState(0)
   const [totalReservationsSecondService, setTotalReservationsSecondService] = useState(0)
@@ -96,7 +96,7 @@ export default function Reservaciones() {
                   fontWeight: 300,
                 }}
               >
-                Se esta realizando un mantenimiento, por favor espere.
+                Por favor espere.
             </p>
             </div>
         }
