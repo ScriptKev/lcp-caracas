@@ -10,7 +10,7 @@ export const FormSeccionStyled = styled.section`
 `
 
 export const FormBgStyled = styled.div`
-  max-width: 600px;
+  max-width: 400px;
   width: 100%;
   margin: auto;
   height: 400px;
@@ -24,8 +24,8 @@ export const FormBgStyled = styled.div`
   box-shadow: 1px 1px 10px ${({ theme }) => theme.shadows.primary};
 
   @media screen and (max-width: 425px) {
-    background-image: url(/img/formHeader-10-01-2021.webp);
-    height: 250px;
+    background-image: url('/img/formHeader-17-01-2021.webp');
+    height: 300px;
     width: 100%;
     margin: 0 auto;
   }
