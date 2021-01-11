@@ -7,7 +7,7 @@ import NavBarMobile from 'components/NavBarMobile'
 import { FormSeccionStyled, FormBgStyled } from 'layouts/Pages/ReservacionesLayout'
 
 export default function Reservaciones() {
-  const [reservationsStatus, setReservationsStatus] = useState(false)
+  const [reservationsStatus, setReservationsStatus] = useState(true)
   const [windowDimension, setWindowDimension] = useState(null)
   const [totalReservationsFirstService, setTotalReservationsFirstService] = useState(0)
   const [totalReservationsSecondService, setTotalReservationsSecondService] = useState(0)
@@ -41,14 +41,8 @@ export default function Reservaciones() {
     <div id="reservations">
       <Head>
         <title>La Casa de mi Padre - Reservaciones</title>
-        <meta
-          name="description"
-          content="Iglesia cristiana - La Casa de mi Padre - Reservaciones"
-        />
-        <meta
-          name="keywords"
-          content="Realiza una reservacion en la iglesia La Casa de mi Padre"
-        />
+        <meta name="description" content="Iglesia cristiana - La Casa de mi Padre - Reservaciones" />
+        <meta name="keywords" content="Realiza una reservacion en la iglesia La Casa de mi Padre" />
       </Head>
 
       <NavBar light />
