@@ -14,7 +14,7 @@ export const FormBgStyled = styled.div`
   width: 100%;
   margin: auto;
   height: 400px;
-  background-image: url(/img/formHeader-10-01-2021.webp);
+  background-image: url('/img/formHeader-17-01-2021.webp');
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
