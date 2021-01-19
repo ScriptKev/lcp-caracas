@@ -21,9 +21,9 @@ const HeaderHome = () => {
           style={{ margin: 'auto', textAlign: 'start' }}
         >
           <h1 style={{ textShadow: '1px 1px 7px black' }}>
-            "Demuéstrale a <em>Dios</em> <br />
-            que para ti él es <br />
-            lo más importante". <br />
+            "Demuéstrale a <em>Dios</em><br />
+            que para ti él es<br />
+            lo más importante".<br />
           </h1>
           <div className='header__quote'>Prov. 3:9</div>
 
