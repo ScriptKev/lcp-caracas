@@ -59,7 +59,7 @@ export const ContactMapStyled = styled.section`
       font-size: 1.5rem;
     }
     & > p {
-      font-size: 0.8rem;
+      font-size: 13px;
     }
   }
 `

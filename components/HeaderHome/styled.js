@@ -45,7 +45,7 @@ export const HeaderStyled = styled.header`
 
   @media (max-width: 768px) {
     h1 {
-      font-size: 19px;
+      font-size: 23px;
       text-align: center;
       font-weight: 400;
       line-height: 30px;
@@ -66,7 +66,7 @@ export const HeaderBg = styled.div`
   position: absolute;
   z-index: -1;
   width: 100%;
-  filter: brightness(0.9);
+  filter: brightness(0.8);
   height: 100vh;
   background: radial-gradient(circle,#536370 0%,#182d35 100%);
 
