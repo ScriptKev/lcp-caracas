@@ -6,7 +6,7 @@ const HeaderHome = () => {
     <HeaderStyled>
       <HeaderBg>
         <Image
-          src="/img/HeaderBg-17-01-21.webp"
+          src="/img/HeaderBg-24-01-21.webp"
           alt="headerBg"
           width={1920}
           height={1080}
@@ -21,11 +21,11 @@ const HeaderHome = () => {
           style={{ margin: 'auto', textAlign: 'start' }}
         >
           <h1 style={{ textShadow: '1px 1px 7px black' }}>
-            "Que el Dios de la <em>esperanza</em> <br />
-            los llene de toda alegría y paz <br />
-            a ustedes que creen en Él". <br />
+            "Demuéstrale a <em>Dios</em> <br />
+            que para ti él es<br />
+            lo más importante". <br />
           </h1>
-          <div className='header__quote'>Rom. 15:13</div>
+          <div className='header__quote'>Prov. 3:9</div>
 
           {/* <SloganStyled>
             <h2>

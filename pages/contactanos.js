@@ -56,9 +56,11 @@ export default function Contactanos() {
           <ContactMapStyled>
             <h4>Estamos aqui</h4>
             <p>
-              Edf. Santa Fe, nivel Mezzanina. Calle Tito Salas. Bellas Artes -
-              Caracas. <br />
-              Teléfonos: 0212 - 578.59.69 / 0424 - 149.88.00
+              Edf. Santa Fe, Nivel Mezzanina. <br />
+              Av. Sur 21. Entre Av. México y Este 2. <br />
+              La Candelaria - Caracas. <br />
+              (A media cuadra de la Estación Bellas Artes) <br />
+              Telf.: 0212-578-5969 / 0424-149-8800
             </p>
             <Map />
           </ContactMapStyled>

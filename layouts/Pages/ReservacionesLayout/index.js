@@ -10,11 +10,11 @@ export const FormSeccionStyled = styled.section`
 `
 
 export const FormBgStyled = styled.div`
-  max-width: 400px;
+  max-width: 470px;
   width: 100%;
   margin: auto;
   height: 400px;
-  background-image: url('/img/formHeader-17-01-2021.webp');
+  background-image: url('/img/formHeader-24-01-2021.webp');
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
@@ -24,8 +24,8 @@ export const FormBgStyled = styled.div`
   box-shadow: 1px 1px 10px ${({ theme }) => theme.shadows.primary};
 
   @media screen and (max-width: 425px) {
-    background-image: url('/img/formHeader-17-01-2021.webp');
-    height: 300px;
+    background-image: url('/img/formHeader-24-01-2021.webp');
+    height: 280px;
     width: 100%;
     margin: 0 auto;
   }
