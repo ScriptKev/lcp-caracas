@@ -15,11 +15,8 @@ export const loginWithGoogle = () => {
 
 export const CreateUser = async (email, password) => {
   return await auth.createUserWithEmailAndPassword(email, password)
-    .then((user) => {
-      console.log(user)
-      return user
-    })
-    .catch(console.error);
+    .then(user => user)
+    .catch(console.error)
 }
 
 export const SignIn = async (email, password) => {

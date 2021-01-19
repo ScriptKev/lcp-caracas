@@ -78,6 +78,12 @@ export default function Login() {
           Home
         </a>
       </Link>
+
+      <Link href='/register'>
+        <a style={{ marginTop: '20px', color: 'rgb(255, 192, 0)' }}>
+          Crear Cuenta
+        </a>
+      </Link>
     </div>
   )
 }

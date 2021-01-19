@@ -1,17 +1,29 @@
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { CreateUser } from 'services/firebase'
 
 export default function Register() {
   const [registerActive, setRegisterActive] = useState(false)
-  const [user, setUser] = useState({ email: '', password: '' })
+  const [user, setUser] = useState({})
   const { register, handleSubmit, errors } = useForm()
+  const router = useRouter()
 
   const onCreateUser = async ({ email, password }) => {
-    setUser({ email, password })
-    const userCreated = await CreateUser(user.email.trim(), user.password)
-    console.log('onCreateUser', userCreated)
+    CreateUser(email.trim(), password)
+      .then(({ user }) => {
+        const email = user.email
+        const displayName = user.displayName
+        const userCreation = user.metadata.creationTime
+        const phoneNumber = user.phoneNumber
+        const photoURL = user.photoURL
+        const id = user.uid
+        const refreshToken = user.refreshToken
+
+        setUser({ email, password, displayName, userCreation, phoneNumber, photoURL, id, refreshToken })
+        router.replace('/login')
+      })
   }
 
   if (!registerActive)
@@ -69,8 +81,14 @@ export default function Register() {
         {errors.password && <span>Password is required</span>}
       </form>
       <Link href='/'>
-        <a style={{ marginTop: '20px' }}>
+        <a style={{ marginTop: '20px', color: 'rgb(255, 192, 0)' }}>
           Home
+        </a>
+      </Link>
+
+      <Link href='/login'>
+        <a style={{ marginTop: '20px', color: 'rgb(255, 192, 0)' }}>
+          Iniciar Session
         </a>
       </Link>
     </div>
