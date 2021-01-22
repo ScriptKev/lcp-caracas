@@ -18,7 +18,7 @@ export const CarouselSlider = styled.div`
   transform: ${(props) => `scale(${props.active ? "1.02" : "1"})`};
 `;
 
-export const CarouselItem = styled.div`
+export const Item = styled.div`
   background-image: url(${(props) => props.img});
   background-size: cover;
   background-position: center;
@@ -28,20 +28,20 @@ export const CarouselItem = styled.div`
   scroll-snap-align: center;
 `;
 
-export const CarouselCircleContainer = styled.div`
+export const CarouselIndicatorContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
 `;
 
-export const CarouselCircle = styled.div`
+export const Indicator = styled.div`
   height: 15px;
   width: 15px;
-  background-color: ${(props) => (props.active ? "#fff" : "transparent")};
   border: 1px solid #fff;
   border-radius: 50%;
   margin-right: 10px;
   cursor: pointer;
+  background-color: ${(props) => (props.active ? "#fff" : "transparent")};
   &::last-child {
     margin-right: 0;
   }

@@ -1,16 +1,16 @@
 import { useRef, useState } from "react";
 
+import CarouselItem from "./CarouselItem";
+import CarouselIndicator from "./CarouselIndicator";
+
 import {
   CarouselContainer,
   CarouselSlider,
-  CarouselItem,
-  CarouselCircleContainer,
-  CarouselCircle,
+  CarouselIndicatorContainer,
 } from "./styled";
 
 export default function Carousel({ items = [], dragSpeed = 2 }) {
   const carouselSlider = useRef(null);
-  console.log(carouselSlider);
   const [isDown, setIsDown] = useState(false);
   const [startX, setStartX] = useState(null);
   const [scrollLeft, setScrollLeft] = useState(null);
@@ -27,6 +27,7 @@ export default function Carousel({ items = [], dragSpeed = 2 }) {
 
   const handleMouseMove = (evt) => {
     if (!isDown) return;
+
     evt.preventDefault();
     const x = evt.pageX - carouselSlider.current.offsetLeft;
     const walk = (x - startX) * dragSpeed;
@@ -47,18 +48,11 @@ export default function Carousel({ items = [], dragSpeed = 2 }) {
           <CarouselItem key={src} img={src} />
         ))}
       </CarouselSlider>
-      <CarouselCircleContainer>
+      <CarouselIndicatorContainer>
         {items.map(({ src }) => (
-          <CarouselCircle key={src} />
+          <CarouselIndicator key={src} />
         ))}
-      </CarouselCircleContainer>
+      </CarouselIndicatorContainer>
     </CarouselContainer>
   );
 }
-
-// todo ancho
-// no flechas en los laterales
-// arrastre de imagenes
-// responsive
-// indicar cantidad de elementos con circulos debajo de las imagenes.
-// reutilizable (images por props, que sean links o referencias locales de images)
