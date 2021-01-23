@@ -1,9 +1,11 @@
+import { forwardRef } from "react";
+
 import { Item } from "./styled";
 
-export default function CarouselItem({ img }) {
-  return (
-    <li>
-      <Item img={img} />
-    </li>
-  );
-}
+const CarouselItem = forwardRef(({ img, index }, ref) => (
+  <li id={index} ref={ref}>
+    <Item img={img} />
+  </li>
+));
+
+export default CarouselItem;

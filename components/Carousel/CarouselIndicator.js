@@ -1,10 +1,9 @@
 import { Indicator } from "./styled";
 
-export default function CarouselIndicator() {
+export default function CarouselIndicator({ index, indexActive }) {
   return (
     <li>
-      {/* <Indicator onCLick={onClick} active={index === activeIndex} /> */}
-      <Indicator />
+      <Indicator active={index == indexActive} />
     </li>
   );
 }
