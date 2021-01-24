@@ -1,10 +1,8 @@
 import styled from "styled-components";
 
 export const CarouselContainer = styled.div`
-  height: 350px;
   overflow: hidden;
-  border: 1px solid cadetblue;
-  background-color: #1b5385;
+  transition-property: transform;
 `;
 
 export const CarouselSlider = styled.div`
@@ -13,19 +11,19 @@ export const CarouselSlider = styled.div`
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   --webkit-overflow-scrolling: touch;
-  position: relative;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 1);
-  transform: ${(props) => `scale(${props.active ? "1.02" : "1"})`};
+  transition: 0.2s ease-in-out;
+  transform: ${(props) => `scale(${props.active ? 1.02 : 1})`};
 `;
 
 export const Item = styled.div`
   background-image: url(${(props) => props.img});
   background-size: cover;
   background-position: center;
-  overflow: hidden;
   height: 300px;
-  min-width: 100vw;
+  width: 100vw;
   scroll-snap-align: center;
+  transition: 0.5s ease-in-out;
+  transform: ${(props) => `scale(${props.active ? 1.02 : 1})`};
 `;
 
 export const CarouselIndicatorContainer = styled.div`
@@ -35,13 +33,18 @@ export const CarouselIndicatorContainer = styled.div`
 `;
 
 export const Indicator = styled.div`
-  height: 15px;
-  width: 15px;
+  height: 12.5px;
+  width: 12.5px;
   border: 1px solid #fff;
   border-radius: 50%;
-  margin-right: 10px;
+  position: relative;
+  margin: -25px 10px 0 0;
   cursor: pointer;
-  background-color: ${(props) => (props.active ? "#fff" : "transparent")};
+  transition: 0.2s linear;
+  background-color: #fff;
+  transition-property: opacity, transform;
+  opacity: ${(props) => (props.active ? 1 : 0.6)};
+  transform: ${(props) => `scale(${props.active ? "1.25" : "1"})`};
   &::last-child {
     margin-right: 0;
   }

@@ -80,7 +80,13 @@ export default function Carousel({ items = [], dragSpeed = 2 }) {
         onMouseMove={handleMouseMove}
       >
         {items.map(({ src }, index) => (
-          <CarouselItem key={src} img={src} index={index} ref={addToRefs} />
+          <CarouselItem
+            key={src}
+            img={src}
+            index={index}
+            indexActive={indexActive}
+            ref={addToRefs}
+          />
         ))}
       </CarouselSlider>
       <CarouselIndicatorContainer>
