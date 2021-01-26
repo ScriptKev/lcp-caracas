@@ -1,9 +1,8 @@
-import { Indicator } from "./styled";
+import { Indicator } from './styled'
 
-export default function CarouselIndicator({ index, indexActive }) {
-  return (
-    <li>
-      <Indicator active={index == indexActive} />
-    </li>
-  );
-}
+const CarouselIndicator = ({ index, indexActive }) =>
+  <li>
+    <Indicator active={index == indexActive} />
+  </li>
+
+export default CarouselIndicator
