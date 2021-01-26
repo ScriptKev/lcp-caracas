@@ -7,7 +7,7 @@ import NavBarMobile from 'components/NavBarMobile'
 import { FormSeccionStyled, FormBgStyled } from 'layouts/Pages/ReservacionesLayout'
 
 export default function Reservaciones() {
-  const [reservationsStatus, setReservationsStatus] = useState(false)
+  const [reservationsStatus, setReservationsStatus] = useState(true)
   const [windowDimension, setWindowDimension] = useState(null)
   const [totalReservationsFirstService, setTotalReservationsFirstService] = useState(0)
   const [totalReservationsSecondService, setTotalReservationsSecondService] = useState(0)
