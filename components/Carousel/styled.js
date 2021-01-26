@@ -5,7 +5,7 @@ export const CarouselContainer = styled.div`
   transition-property: transform;
 `;
 
-export const CarouselSlider = styled.div`
+export const CarouselSlider = styled.ul`
   display: flex;
   overflow: hidden;
   scroll-snap-type: x mandatory;
@@ -26,7 +26,7 @@ export const Item = styled.div`
   transform: ${(props) => `scale(${props.active ? 1.02 : 1})`};
 `;
 
-export const CarouselIndicatorContainer = styled.div`
+export const CarouselIndicatorContainer = styled.ul`
   display: flex;
   align-items: center;
   justify-content: center;
