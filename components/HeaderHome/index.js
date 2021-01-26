@@ -29,7 +29,7 @@ const HeaderHome = () => {
 
           <img
             alt='headerBg'
-            src='img/palnificar-es-clave-sin-lcp.png'
+            src='img/titulo-header.png'
             style={{
               display: 'flex',
               width: '74%',
