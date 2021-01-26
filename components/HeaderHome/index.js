@@ -6,7 +6,7 @@ const HeaderHome = () => {
     <HeaderStyled>
       <HeaderBg>
         <Image
-          src="/img/HeaderBg-24-01-21.webp"
+          src="/img/HeaderBg-31-01-21.webp"
           alt="headerBg"
           width={1920}
           height={1080}
@@ -20,12 +20,26 @@ const HeaderHome = () => {
           className="header__title"
           style={{ margin: 'auto', textAlign: 'start' }}
         >
-          <h1 style={{ textShadow: '1px 1px 7px black' }}>
+          {/* <h1 style={{ textShadow: '1px 1px 7px black' }}>
             "Demuéstrale a <em>Dios</em><br />
             que para ti él es<br />
             lo más importante".<br />
           </h1>
-          <div className='header__quote'>Prov. 3:9</div>
+          <div className='header__quote'>Prov. 3:9</div> */}
+
+          <img
+            alt='headerBg'
+            src='img/palnificar-es-clave-sin-lcp.png'
+            style={{
+              display: 'flex',
+              width: '74%',
+              margin: 'auto',
+              maxWidth: '800px',
+              justifyContent: 'center',
+              alignItems: 'center',
+              minWidth: '300px'
+            }}
+          />
 
           {/* <SloganStyled>
             <h2>
