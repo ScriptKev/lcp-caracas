@@ -67,6 +67,16 @@
   dependencies:
     "@babel/highlight" "^7.8.3"
 
+<<<<<<< HEAD
+"@babel/code-frame@^7.0.0", "@babel/code-frame@^7.10.4", "@babel/code-frame@^7.12.11", "@babel/code-frame@^7.5.5":
+  version "7.12.11"
+  resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.12.11.tgz#f4ad435aa263db935b8f10f2c552d23fb716a63f"
+  integrity sha512-Zt1yodBx1UcyiePMSkWnU4hPqhwq7hGi2nFL1LeA3EUl+q2LQx16MISgJ0+z7dnmgvP9QtIleuETGOiOH1RcIw==
+  dependencies:
+    "@babel/highlight" "^7.10.4"
+
+=======
+>>>>>>> ea6e461fb30657347d088fb163da54e3076a8345
 "@babel/compat-data@^7.12.5", "@babel/compat-data@^7.12.7":
   version "7.12.7"
   resolved "https://registry.yarnpkg.com/@babel/compat-data/-/compat-data-7.12.7.tgz#9329b4782a7d6bbd7eef57e11addf91ee3ef1e41"
@@ -1762,6 +1772,22 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
+<<<<<<< HEAD
+"@next/env@10.0.4":
+  version "10.0.4"
+  resolved "https://registry.yarnpkg.com/@next/env/-/env-10.0.4.tgz#ac759094d021853616af56a7bd6720e44a92a303"
+  integrity sha512-U+XIL75XM1pCmY4+9kYbst/0IptlfDnkFfKdgADBZulQlfng4RB3zirdzkoBtod0lVcrGgDryzOi1mM23RiiVQ==
+
+"@next/polyfill-module@10.0.4":
+  version "10.0.4"
+  resolved "https://registry.yarnpkg.com/@next/polyfill-module/-/polyfill-module-10.0.4.tgz#c34391a12ad80d6e373c403f96c8e2bbd793dca1"
+  integrity sha512-i2gLUa3YuZ2eQg+d91n+jS4YbPVKg1v0HHIUeJFJMMtpG/apBkTuTLBQGJXe4nKNf7/41NWLDft4ihC3Zfd+Yw==
+
+"@next/react-dev-overlay@10.0.4":
+  version "10.0.4"
+  resolved "https://registry.yarnpkg.com/@next/react-dev-overlay/-/react-dev-overlay-10.0.4.tgz#c578a3c71e2f8a8fe2aae8007cc40d1cf10bc768"
+  integrity sha512-8pKN0PspEtfVFqeSpNQymfXWyV95OTIT0xP9IqILJX2+52ICdU5D+YNuNIwpc4ZOZ0CssM/uYsz6K1FHbCaU7A==
+=======
 "@next/env@10.0.5":
   version "10.0.5"
   resolved "https://registry.yarnpkg.com/@next/env/-/env-10.0.5.tgz#446e59ee7a8d05061be784b24732c369653038ab"
@@ -1776,6 +1802,7 @@
   version "10.0.5"
   resolved "https://registry.yarnpkg.com/@next/react-dev-overlay/-/react-dev-overlay-10.0.5.tgz#f0006e56d8c8b4269f341ff22233e4a7e1176b52"
   integrity sha512-olqIaaRvFezzi02V/AYwvmrGbShUNrJDvyZTGNahxXEkiYsuu67llY5IKFM5Oya93/eRqaCCKMn89vpvYtvDcw==
+>>>>>>> ea6e461fb30657347d088fb163da54e3076a8345
   dependencies:
     "@babel/code-frame" "7.12.11"
     anser "1.4.9"
@@ -1789,10 +1816,17 @@
     stacktrace-parser "0.1.10"
     strip-ansi "6.0.0"
 
+<<<<<<< HEAD
+"@next/react-refresh-utils@10.0.4":
+  version "10.0.4"
+  resolved "https://registry.yarnpkg.com/@next/react-refresh-utils/-/react-refresh-utils-10.0.4.tgz#5ad753572891aa7cb1010b358cc4241d7be20d20"
+  integrity sha512-kZ/37aSQaR0GCZVqh7WDLkeEZqzjPQoZUDdo6TOWiIEb+089AmfYp8A4/1ra9Fu8T4b4wnB76TRl6tp6DeJLXg==
+=======
 "@next/react-refresh-utils@10.0.5":
   version "10.0.5"
   resolved "https://registry.yarnpkg.com/@next/react-refresh-utils/-/react-refresh-utils-10.0.5.tgz#c1ca664c4ffe2f79d14383323d783368833d503b"
   integrity sha512-Eo+nvW1ZhdkuxBWSsKHGDLNspUaJJQClld9R+H+EtiIuAQtTa8f2rhcQeyUOtvUNQoPyq7Em2PwUqOQD6LOOMA==
+>>>>>>> ea6e461fb30657347d088fb163da54e3076a8345
 
 "@nodelib/fs.scandir@2.1.4":
   version "2.1.4"
@@ -4340,7 +4374,11 @@ camelize@^1.0.0:
   resolved "https://registry.yarnpkg.com/camelize/-/camelize-1.0.0.tgz#164a5483e630fa4321e5af07020e531831b2609b"
   integrity sha1-FkpUg+Yw+kMh5a8HAg5TGDGyYJs=
 
+<<<<<<< HEAD
+caniuse-lite@^1.0.30001035, caniuse-lite@^1.0.30001109, caniuse-lite@^1.0.30001165:
+=======
 caniuse-lite@^1.0.30001035, caniuse-lite@^1.0.30001093, caniuse-lite@^1.0.30001109, caniuse-lite@^1.0.30001113, caniuse-lite@^1.0.30001154, caniuse-lite@^1.0.30001165:
+>>>>>>> ea6e461fb30657347d088fb163da54e3076a8345
   version "1.0.30001168"
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001168.tgz#6fcd098c139d003b9bd484cbb9ca26cb89907f9a"
   integrity sha512-P2zmX7swIXKu+GMMR01TWa4csIKELTNnZKc+f1CjebmZJQtTAEXmpQSoKVJVVcvPGAA0TEYTOUp3VehavZSFPQ==
@@ -4830,9 +4868,15 @@ core-js-compat@^3.8.0:
     semver "7.0.0"
 
 core-js-pure@^3.0.0:
+<<<<<<< HEAD
+  version "3.8.3"
+  resolved "https://registry.yarnpkg.com/core-js-pure/-/core-js-pure-3.8.3.tgz#10e9e3b2592ecaede4283e8f3ad7020811587c02"
+  integrity sha512-V5qQZVAr9K0xu7jXg1M7qTEwuxUgqr7dUOezGaNa7i+Xn9oXAU/d1fzqD9ObuwpVQOaorO5s70ckyi1woP9lVA==
+=======
   version "3.8.2"
   resolved "https://registry.yarnpkg.com/core-js-pure/-/core-js-pure-3.8.2.tgz#286f885c0dac1cdcd6d78397392abc25ddeca225"
   integrity sha512-v6zfIQqL/pzTVAbZvYUozsxNfxcFb6Ks3ZfEbuneJl3FW9Jb8F6vLWB6f+qTmAu72msUdyb84V8d/yBFf7FNnw==
+>>>>>>> ea6e461fb30657347d088fb163da54e3076a8345
 
 core-js-pure@^3.0.1:
   version "3.8.1"
@@ -5074,7 +5118,11 @@ css-what@^4.0.0:
   resolved "https://registry.yarnpkg.com/css-what/-/css-what-4.0.0.tgz#35e73761cab2eeb3d3661126b23d7aa0e8432233"
   integrity sha512-teijzG7kwYfNVsUh2H/YN62xW3KK9YhXEgSlbxMlcyjPNvdKJqFx5lrwlJgoFP1ZHlB89iGDlo/JyshKeRhv5A==
 
+<<<<<<< HEAD
+css.escape@^1.5.0, css.escape@^1.5.1:
+=======
 css.escape@1.5.1, css.escape@^1.5.1:
+>>>>>>> ea6e461fb30657347d088fb163da54e3076a8345
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/css.escape/-/css.escape-1.5.1.tgz#42e27d4fa04ae32f931a4b4d4191fa9cddee97cb"
   integrity sha1-QuJ9T6BK4y+TGktNQZH6nN3ul8s=
@@ -5166,10 +5214,26 @@ dashdash@^1.12.0:
   dependencies:
     assert-plus "^1.0.0"
 
+<<<<<<< HEAD
+data-uri-to-buffer@3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/data-uri-to-buffer/-/data-uri-to-buffer-3.0.0.tgz#8a3088a5efd3f53c3682343313c6895d498eb8d7"
+  integrity sha512-MJ6mFTZ+nPQO+39ua/ltwNePXrfdF3Ww0wP1Od7EePySXN1cP9XNqRQOG3FxTfipp8jx898LUCgBCEP11Qw/ZQ==
+=======
 data-uri-to-buffer@3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/data-uri-to-buffer/-/data-uri-to-buffer-3.0.1.tgz#594b8973938c5bc2c33046535785341abc4f3636"
   integrity sha512-WboRycPNsVw3B3TL559F7kuBUM4d8CgMEvk6xEJlOp7OBPjt6G7z8WMWlD2rOFZLk6OYfFIUGsCOWzcQH9K2og==
+
+data-urls@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/data-urls/-/data-urls-2.0.0.tgz#156485a72963a970f5d5821aaf642bef2bf2db9b"
+  integrity sha512-X5eWTSXO/BJmpdIKCRuKUgSCgAN0OwliVK3yPKbwIWU1Tdw5BRajxlzMidvh+gwko9AfQ9zIj52pzF91Q3YAvQ==
+>>>>>>> ea6e461fb30657347d088fb163da54e3076a8345
+  dependencies:
+    abab "^2.0.3"
+    whatwg-mimetype "^2.3.0"
+    whatwg-url "^8.0.0"
 
 data-urls@^2.0.0:
   version "2.0.0"
@@ -5723,6 +5787,17 @@ entities@^2.0.0, entities@~2.1.0:
   integrity sha512-hCx1oky9PFrJ611mf0ifBLBRW8lUUVRlFolb5gWRfIELabBlbp9xZvrqZLZAs+NxFnbfQoeGd8wDkygjg7U85w==
 
 enzyme-adapter-react-16@^1.15.5:
+<<<<<<< HEAD
+  version "1.15.6"
+  resolved "https://registry.yarnpkg.com/enzyme-adapter-react-16/-/enzyme-adapter-react-16-1.15.6.tgz#fd677a658d62661ac5afd7f7f541f141f8085901"
+  integrity sha512-yFlVJCXh8T+mcQo8M6my9sPgeGzj85HSHi6Apgf1Cvq/7EL/J9+1JoJmJsRxZgyTvPMAqOEpRSu/Ii/ZpyOk0g==
+  dependencies:
+    enzyme-adapter-utils "^1.14.0"
+    enzyme-shallow-equal "^1.0.4"
+    has "^1.0.3"
+    object.assign "^4.1.2"
+    object.values "^1.1.2"
+=======
   version "1.15.5"
   resolved "https://registry.yarnpkg.com/enzyme-adapter-react-16/-/enzyme-adapter-react-16-1.15.5.tgz#7a6f0093d3edd2f7025b36e7fbf290695473ee04"
   integrity sha512-33yUJGT1nHFQlbVI5qdo5Pfqvu/h4qPwi1o0a6ZZsjpiqq92a3HjynDhwd1IeED+Su60HDWV8mxJqkTnLYdGkw==
@@ -5732,12 +5807,17 @@ enzyme-adapter-react-16@^1.15.5:
     has "^1.0.3"
     object.assign "^4.1.0"
     object.values "^1.1.1"
+>>>>>>> ea6e461fb30657347d088fb163da54e3076a8345
     prop-types "^15.7.2"
     react-is "^16.13.1"
     react-test-renderer "^16.0.0-0"
     semver "^5.7.0"
 
+<<<<<<< HEAD
+enzyme-adapter-utils@^1.14.0:
+=======
 enzyme-adapter-utils@^1.13.1:
+>>>>>>> ea6e461fb30657347d088fb163da54e3076a8345
   version "1.14.0"
   resolved "https://registry.yarnpkg.com/enzyme-adapter-utils/-/enzyme-adapter-utils-1.14.0.tgz#afbb0485e8033aa50c744efb5f5711e64fbf1ad0"
   integrity sha512-F/z/7SeLt+reKFcb7597IThpDp0bmzcH1E9Oabqv+o01cID2/YInlqHbFl7HzWBl4h3OdZYedtwNDOmSKkk0bg==
@@ -7877,6 +7957,119 @@ jake@^10.6.1:
     minimatch "^3.0.4"
 
 jest-changed-files@^26.6.2:
+<<<<<<< HEAD
+=======
+  version "26.6.2"
+  resolved "https://registry.yarnpkg.com/jest-changed-files/-/jest-changed-files-26.6.2.tgz#f6198479e1cc66f22f9ae1e22acaa0b429c042d0"
+  integrity sha512-fDS7szLcY9sCtIip8Fjry9oGf3I2ht/QT21bAHm5Dmf0mD4X3ReNUf17y+bO6fR8WgbIZTlbyG1ak/53cbRzKQ==
+  dependencies:
+    "@jest/types" "^26.6.2"
+    execa "^4.0.0"
+    throat "^5.0.0"
+
+jest-cli@^26.6.3:
+  version "26.6.3"
+  resolved "https://registry.yarnpkg.com/jest-cli/-/jest-cli-26.6.3.tgz#43117cfef24bc4cd691a174a8796a532e135e92a"
+  integrity sha512-GF9noBSa9t08pSyl3CY4frMrqp+aQXFGFkf5hEPbh/pIUFYWMK6ZLTfbmadxJVcJrdRoChlWQsA2VkJcDFK8hg==
+  dependencies:
+    "@jest/core" "^26.6.3"
+    "@jest/test-result" "^26.6.2"
+    "@jest/types" "^26.6.2"
+    chalk "^4.0.0"
+    exit "^0.1.2"
+    graceful-fs "^4.2.4"
+    import-local "^3.0.2"
+    is-ci "^2.0.0"
+    jest-config "^26.6.3"
+    jest-util "^26.6.2"
+    jest-validate "^26.6.2"
+    prompts "^2.0.1"
+    yargs "^15.4.1"
+
+jest-config@^26.6.3:
+  version "26.6.3"
+  resolved "https://registry.yarnpkg.com/jest-config/-/jest-config-26.6.3.tgz#64f41444eef9eb03dc51d5c53b75c8c71f645349"
+  integrity sha512-t5qdIj/bCj2j7NFVHb2nFB4aUdfucDn3JRKgrZnplb8nieAirAzRSHP8uDEd+qV6ygzg9Pz4YG7UTJf94LPSyg==
+  dependencies:
+    "@babel/core" "^7.1.0"
+    "@jest/test-sequencer" "^26.6.3"
+    "@jest/types" "^26.6.2"
+    babel-jest "^26.6.3"
+    chalk "^4.0.0"
+    deepmerge "^4.2.2"
+    glob "^7.1.1"
+    graceful-fs "^4.2.4"
+    jest-environment-jsdom "^26.6.2"
+    jest-environment-node "^26.6.2"
+    jest-get-type "^26.3.0"
+    jest-jasmine2 "^26.6.3"
+    jest-regex-util "^26.0.0"
+    jest-resolve "^26.6.2"
+    jest-util "^26.6.2"
+    jest-validate "^26.6.2"
+    micromatch "^4.0.2"
+    pretty-format "^26.6.2"
+
+jest-diff@^26.0.0, jest-diff@^26.6.2:
+  version "26.6.2"
+  resolved "https://registry.yarnpkg.com/jest-diff/-/jest-diff-26.6.2.tgz#1aa7468b52c3a68d7d5c5fdcdfcd5e49bd164394"
+  integrity sha512-6m+9Z3Gv9wN0WFVasqjCL/06+EFCMTqDEUl/b87HYK2rAPTyfz4ZIuSlPhY51PIQRWx5TaxeF1qmXKe9gfN3sA==
+  dependencies:
+    chalk "^4.0.0"
+    diff-sequences "^26.6.2"
+    jest-get-type "^26.3.0"
+    pretty-format "^26.6.2"
+
+jest-docblock@^26.0.0:
+  version "26.0.0"
+  resolved "https://registry.yarnpkg.com/jest-docblock/-/jest-docblock-26.0.0.tgz#3e2fa20899fc928cb13bd0ff68bd3711a36889b5"
+  integrity sha512-RDZ4Iz3QbtRWycd8bUEPxQsTlYazfYn/h5R65Fc6gOfwozFhoImx+affzky/FFBuqISPTqjXomoIGJVKBWoo0w==
+  dependencies:
+    detect-newline "^3.0.0"
+
+jest-each@^26.6.2:
+  version "26.6.2"
+  resolved "https://registry.yarnpkg.com/jest-each/-/jest-each-26.6.2.tgz#02526438a77a67401c8a6382dfe5999952c167cb"
+  integrity sha512-Mer/f0KaATbjl8MCJ+0GEpNdqmnVmDYqCTJYTvoo7rqmRiDllmp2AYN+06F93nXcY3ur9ShIjS+CO/uD+BbH4A==
+  dependencies:
+    "@jest/types" "^26.6.2"
+    chalk "^4.0.0"
+    jest-get-type "^26.3.0"
+    jest-util "^26.6.2"
+    pretty-format "^26.6.2"
+
+jest-environment-jsdom@^26.6.2:
+  version "26.6.2"
+  resolved "https://registry.yarnpkg.com/jest-environment-jsdom/-/jest-environment-jsdom-26.6.2.tgz#78d09fe9cf019a357009b9b7e1f101d23bd1da3e"
+  integrity sha512-jgPqCruTlt3Kwqg5/WVFyHIOJHsiAvhcp2qiR2QQstuG9yWox5+iHpU3ZrcBxW14T4fe5Z68jAfLRh7joCSP2Q==
+  dependencies:
+    "@jest/environment" "^26.6.2"
+    "@jest/fake-timers" "^26.6.2"
+    "@jest/types" "^26.6.2"
+    "@types/node" "*"
+    jest-mock "^26.6.2"
+    jest-util "^26.6.2"
+    jsdom "^16.4.0"
+
+jest-environment-node@^26.6.2:
+  version "26.6.2"
+  resolved "https://registry.yarnpkg.com/jest-environment-node/-/jest-environment-node-26.6.2.tgz#824e4c7fb4944646356f11ac75b229b0035f2b0c"
+  integrity sha512-zhtMio3Exty18dy8ee8eJ9kjnRyZC1N4C1Nt/VShN1apyXc8rWGtJ9lI7vqiWcyyXS4BVSEn9lxAM2D+07/Tag==
+  dependencies:
+    "@jest/environment" "^26.6.2"
+    "@jest/fake-timers" "^26.6.2"
+    "@jest/types" "^26.6.2"
+    "@types/node" "*"
+    jest-mock "^26.6.2"
+    jest-util "^26.6.2"
+
+jest-get-type@^26.3.0:
+  version "26.3.0"
+  resolved "https://registry.yarnpkg.com/jest-get-type/-/jest-get-type-26.3.0.tgz#e97dc3c3f53c2b406ca7afaed4493b1d099199e0"
+  integrity sha512-TpfaviN1R2pQWkIihlfEanwOXK0zcxrKEE4MlU6Tn7keoXdN6/3gK/xl0yEh8DOunn5pOVGKf8hB4R9gVh04ig==
+
+jest-haste-map@^26.6.2:
+>>>>>>> ea6e461fb30657347d088fb163da54e3076a8345
   version "26.6.2"
   resolved "https://registry.yarnpkg.com/jest-changed-files/-/jest-changed-files-26.6.2.tgz#f6198479e1cc66f22f9ae1e22acaa0b429c042d0"
   integrity sha512-fDS7szLcY9sCtIip8Fjry9oGf3I2ht/QT21bAHm5Dmf0mD4X3ReNUf17y+bO6fR8WgbIZTlbyG1ak/53cbRzKQ==
@@ -9140,18 +9333,32 @@ next-tick@~1.0.0:
   resolved "https://registry.yarnpkg.com/next-tick/-/next-tick-1.0.0.tgz#ca86d1fe8828169b0120208e3dc8424b9db8342c"
   integrity sha1-yobR/ogoFpsBICCOPchCS524NCw=
 
+<<<<<<< HEAD
+next@10.0.4:
+  version "10.0.4"
+  resolved "https://registry.yarnpkg.com/next/-/next-10.0.4.tgz#0d256f58a57d6bab7db7e533900c15f322960b4a"
+  integrity sha512-WXEYr1FuR2cLuWGN8peYGM6ykmbtwaHvrI6RqR2qrTXUNsW+KU5pzIMK5WPcpqP+xOuMhlykOCJvwJH8qU9FZQ==
+=======
 next@10.0.5:
   version "10.0.5"
   resolved "https://registry.yarnpkg.com/next/-/next-10.0.5.tgz#8071e0aa1883266c91943aa7c6b73deadb064793"
   integrity sha512-yr7ap2TLugf0aMHz+3JoKFP9CCkFE+k6jCfdUymORhptjLYZbD3YGlTcUC1CRl+b5Phlbl7m/WUIPde0VcguiA==
+>>>>>>> ea6e461fb30657347d088fb163da54e3076a8345
   dependencies:
     "@ampproject/toolbox-optimizer" "2.7.1-alpha.0"
     "@babel/runtime" "7.12.5"
     "@hapi/accept" "5.0.1"
+<<<<<<< HEAD
+    "@next/env" "10.0.4"
+    "@next/polyfill-module" "10.0.4"
+    "@next/react-dev-overlay" "10.0.4"
+    "@next/react-refresh-utils" "10.0.4"
+=======
     "@next/env" "10.0.5"
     "@next/polyfill-module" "10.0.5"
     "@next/react-dev-overlay" "10.0.5"
     "@next/react-refresh-utils" "10.0.5"
+>>>>>>> ea6e461fb30657347d088fb163da54e3076a8345
     "@opentelemetry/api" "0.14.0"
     ast-types "0.13.2"
     babel-plugin-transform-define "2.0.0"
@@ -9278,9 +9485,15 @@ node-libs-browser@^2.2.1:
     vm-browserify "^1.0.1"
 
 node-mocks-http@^1.9.0:
+<<<<<<< HEAD
+  version "1.10.1"
+  resolved "https://registry.yarnpkg.com/node-mocks-http/-/node-mocks-http-1.10.1.tgz#0232e99a5f66f5d2a0216a47251346bf5606d2d0"
+  integrity sha512-/Nz83kiJ3z+vGqxmlDyv8+L1CJno+gH23DzG3oPH9dBSfMYa5IFVwPgZpXCB2kdiiIu/HoDpZ2BuLqQs7qjFLQ==
+=======
   version "1.10.0"
   resolved "https://registry.yarnpkg.com/node-mocks-http/-/node-mocks-http-1.10.0.tgz#6c80a4a50577396dfd2410e3de79ed14112d7a23"
   integrity sha512-dFnwFc2i8m1EKpN8F9Tn42rAkfopah2FbNN2qETh+cmIT71XRzwwNXeXUd58WWX7r3Wgk1r54vGcUR9DeExAOQ==
+>>>>>>> ea6e461fb30657347d088fb163da54e3076a8345
   dependencies:
     accepts "^1.3.7"
     depd "^1.1.0"
@@ -9494,7 +9707,11 @@ object.pick@^1.3.0:
   dependencies:
     isobject "^3.0.1"
 
+<<<<<<< HEAD
+object.values@^1.1.0, object.values@^1.1.1, object.values@^1.1.2:
+=======
 object.values@^1.1.0, object.values@^1.1.1:
+>>>>>>> ea6e461fb30657347d088fb163da54e3076a8345
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/object.values/-/object.values-1.1.2.tgz#7a2015e06fcb0f546bd652486ce8583a4731c731"
   integrity sha512-MYC0jvJopr8EK6dPBiO8Nb9mvjdypOachO5REGk6MXzujbBrAisKo3HmdEI6kZDL6fC31Mwee/5YbtMebixeag==
@@ -10472,7 +10689,11 @@ react-helmet-async@^1.0.2:
     react-fast-compare "^3.2.0"
     shallowequal "^1.1.0"
 
+<<<<<<< HEAD
+react-hook-form@^6.13.1:
+=======
 react-hook-form@^6.14.2:
+>>>>>>> ea6e461fb30657347d088fb163da54e3076a8345
   version "6.14.2"
   resolved "https://registry.yarnpkg.com/react-hook-form/-/react-hook-form-6.14.2.tgz#60ab0b5367b220a3d96aa0b17bd0f13f9d8c326a"
   integrity sha512-GgDUuT3Yfhl1BOcMl862uAFbCixSomtm3CVlQQ1qVu9Tq5BN2uUIRUIXP8l2Gy99eLUrBqU9x4E7N+si9cnvaw==
