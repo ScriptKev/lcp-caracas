@@ -10,6 +10,7 @@ export const NavStyled = styled.nav`
   font-weight: 500;
   & .route__contact {
     color: ${({ light }) => (light ? '#1a5187' : 'white')};
+    text-shadow: ${({ light }) => (!light && '1px 1px 5px #0000008c')};
     position: relative;
     display: inline-block;
     -webkit-touch-callout: none; /* iOS Safari */
@@ -20,6 +21,7 @@ export const NavStyled = styled.nav`
     user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
     &:hover {
       color: #ffc000;
+    text-shadow: none;
     }
     @media screen and (min-width: 320px) and (max-width: 460px) {
       display: none;
@@ -27,10 +29,11 @@ export const NavStyled = styled.nav`
   }
   & .route__reservations:hover {
     color: #ffc000;
+    text-shadow: none;
   }
   & .route__reservations {
     color: ${({ light }) => (light ? '#1a5187' : 'white')};
-    text-shadow: ${({ light }) => (!light && '1px 1px 5px black')};
+    text-shadow: ${({ light }) => (!light && '1px 1px 5px #0000008c')};
 
     @media screen and (max-width: 425px) {
       font-size: 0.9rem;
@@ -49,6 +52,9 @@ export const ContainerStyled = styled.div`
   margin: 0 auto;
 
   @media screen and (min-width: 320px) and (max-width: 467px) {
+    & .reservationsNavMobile {
+      display: none;
+    }
     padding: 0 15px;
   }
 `

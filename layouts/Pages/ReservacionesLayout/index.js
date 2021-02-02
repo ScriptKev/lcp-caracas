@@ -41,8 +41,36 @@ export const FormDescription = styled.div`
   height: min-content;
   text-align: center;
 
-  @media screen and (max-width: 425px) {
+  & span {
+    font-size: 2rem;
+    font-weight: 400;
   }
+
   @media screen and (min-width: 375px) and (max-width: 425px) {
+  }
+`
+
+export const Info = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #FFC000;
+  color: white;
+  width: 90%;
+  max-width: 425px;
+  margin: 20px auto;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 10px;
+
+  & .spaceEnter {
+    @media screen and (min-width: 400px) {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    font-size: 0.8rem;
   }
 `

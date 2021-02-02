@@ -4,7 +4,7 @@ import { ContainerStyled, HeaderBg, HeaderStyled, SloganStyled } from './styled'
 const HeaderHome = () => {
   return (
     <HeaderStyled>
-      <HeaderBg>
+      {/* <HeaderBg>
         <Image
           src="/img/HeaderBg-31-01-21.webp"
           alt="headerBg"
@@ -14,20 +14,19 @@ const HeaderHome = () => {
           objectFit="cover"
           quality={100}
         />
-      </HeaderBg>
+      </HeaderBg> */}
       <ContainerStyled>
         <div
           className="header__title"
           style={{ margin: 'auto', textAlign: 'start' }}
         >
-          {/* <h1 style={{ textShadow: '1px 1px 7px black' }}>
-            "Demuéstrale a <em>Dios</em><br />
-            que para ti él es<br />
-            lo más importante".<br />
+          <h1>
+            "El <em>amor</em> los<br />
+            mantendrá unidos".<br />
           </h1>
-          <div className='header__quote'>Prov. 3:9</div> */}
+          <div className='header__quote'>Col. 3:14</div>
 
-          <img
+          {/* <img
             alt='headerBg'
             src='img/titulo-header.png'
             style={{
@@ -39,7 +38,7 @@ const HeaderHome = () => {
               alignItems: 'center',
               minWidth: '300px'
             }}
-          />
+          /> */}
 
           {/* <SloganStyled>
             <h2>
