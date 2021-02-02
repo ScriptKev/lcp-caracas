@@ -25,7 +25,7 @@ const NavBar = ({ light, onlyFlag = false }) => {
         </FlagStyled>
 
         {!onlyFlag && (
-          <div>
+          <div className='reservationsNavMobile'>
             <Link href="/reservaciones">
               <a>
                 <span

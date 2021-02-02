@@ -4,10 +4,10 @@ import { db } from 'services/firebase'
 import NavBar from 'components/NavBar'
 import FormReservation from 'components/FormReservation'
 import NavBarMobile from 'components/NavBarMobile'
-import { FormSeccionStyled, FormBgStyled } from 'layouts/Pages/ReservacionesLayout'
+import { FormSeccionStyled, FormBgStyled, FormDescription, Info } from 'layouts/Pages/ReservacionesLayout'
 
 export default function Reservaciones() {
-  const [reservationsStatus, setReservationsStatus] = useState(false)
+  const [reservationsStatus, setReservationsStatus] = useState(true)
   const [windowDimension, setWindowDimension] = useState(null)
   const [totalReservationsFirstService, setTotalReservationsFirstService] = useState(0)
   const [totalReservationsSecondService, setTotalReservationsSecondService] = useState(0)
@@ -56,12 +56,19 @@ export default function Reservaciones() {
         {
           reservationsStatus ?
             <>
-              <FormBgStyled />
-              {/* <FormDescription>
-                <h2>Reservaciones</h2>
-                <br />
-                <p>Primer Servicio del Año. <br /> <b>Dom 10/01/21</b></p>
-              </FormDescription> */}
+              {/* <FormBgStyled /> */}
+              <FormDescription>
+                <span>Servicio<br /></span>
+                <p>Dom. 07/01/2021</p>
+
+                <Info>
+                  <img src='/icons/info.svg' width='22px' style={{ marginRight: '10px' }} />
+                  <div style={{ width: '100%' }}>
+                    <p style={{ textAlign: 'start' }}>Se requiere el uso de mascarilla <br className='spaceEnter' /> en todas las áreas</p>
+                  </div>
+                </Info>
+              </FormDescription>
+
               <FormSeccionStyled>
                 <FormReservation
                   totalReservationsFirstService={totalReservationsFirstService}
