@@ -6,6 +6,8 @@ export const HeaderStyled = styled.header`
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #f7f7f7;
+;
 
   & em {
       color: #FFC000;
@@ -14,11 +16,11 @@ export const HeaderStyled = styled.header`
 
   & h1 {
     font-family: 'Helvetica Neue';
-    font-weight: 400;
-    color: whitesmoke;
+    font-weight: 500;
+    color: #1e478dcc;
     font-size: 3rem;
     text-align:center;
-    text-shadow: 2px 2px 10px #00000075;
+    /* text-shadow: 2px 2px 10px #00000075; */
   }
 
   & h2 {
@@ -36,7 +38,7 @@ export const HeaderStyled = styled.header`
     place-content: flex-end;
     font-weight: 200;
     font-size: 1.4rem;
-    color: white;
+    color: #1e478dcc;
 
     & > div {
       color: #FFC000;
@@ -45,9 +47,9 @@ export const HeaderStyled = styled.header`
 
   @media (max-width: 768px) {
     h1 {
-      font-size: 23px;
+      font-size: 25px;
       text-align: center;
-      font-weight: 400;
+      font-weight: 500;
       line-height: 30px;
     }
 
