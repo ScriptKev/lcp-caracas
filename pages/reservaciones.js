@@ -59,7 +59,7 @@ export default function Reservaciones() {
               {/* <FormBgStyled /> */}
               <FormDescription>
                 <span>Servicio<br /></span>
-                <p>Dom. 07/01/2021</p>
+                <p>Dom. 07/02/2021</p>
 
                 <Info>
                   <img src='/icons/info.svg' width='22px' style={{ marginRight: '10px' }} />
