@@ -1,47 +1,18 @@
-import Router from 'next/router'
-import Button from 'components/Button'
+import TicketReservation from './TicketReservation'
 import { ModalStyled } from './styled'
+import FormPrayRequest from './FormPrayRequest'
 
 const Modal = ({ userTicket, closeModal }) => {
-
-  const worshipSheduleDate = Shedule => {
-    if (Shedule === 'Primer Servicio') return 'Hora: 9:00 a.m'
-    if (Shedule === 'Segundo Servicio') return 'Hora: 11:00 a.m'
-    else return 'Hubo un error en el horario'
-  }
-
+  const empty = { fullName: '', worshipShedule: '', reservations: 0 }
   return (
     <ModalStyled.Container>
       <ModalStyled.Box>
-        <span style={{ fontSize: '18px', color: '#1a5187', marginBottom: '10px' }}>
-          ¡Reservación Exitosa!
-        <br />
-          <img
-            src="/icons/icon-success.svg"
-            alt="success"
-            width="30px"
-            style={{ marginTop: '10px' }}
-          />
-        </span>
-        <div>
-          <span>{userTicket.fullName}</span> <br />
-          <span>Reservó: {userTicket.reservations}</span> <br />
-          <span>
-            {worshipSheduleDate(userTicket.worshipShedule)}
-          </span>
-          <br />
-        </div>
-        <br />
-        <Button
-          title="Volver al inicio"
-          primary
-          handleClick={() => {
-            closeModal()
-            Router.replace('/')
-          }}
-        />
+        {
+          userTicket.fullName === empty.fullName
+            ? <FormPrayRequest />
+            : <TicketReservation userTicket={userTicket} closeModal={closeModal} />
+        }
       </ModalStyled.Box>
-
     </ModalStyled.Container>
   )
 }

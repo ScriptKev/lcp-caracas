@@ -18,7 +18,7 @@ export const ModalStyled = {
 
   Box: styled.div`
     background-color: white;
-    padding: 20px 10px;
+    padding: 10px 10px;
     min-width: 280px;
     border-radius: 10px;
     box-shadow: 1px 1px 15px #00000054;
