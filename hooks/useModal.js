@@ -16,14 +16,13 @@ const useModal = () => {
 
   }
 
+  const resetDataModal = () => setDataModal({ fullName: '', worshipShedule: '', reservations: 0 })
   const openModal = () => setModalState({ ...stateModal, isOpen: true })
   const closeModal = () => setModalState({ ...stateModal, isOpen: false })
-  const loadingModal = () => {
-    console.log('LoadingModal')
-    setModalState({ ...stateModal, isLoading: true })
-  }
+  const loadingModal = () => { setModalState({ ...stateModal, isLoading: true }) }
+  const loadedModal = () => { setModalState({ ...stateModal, isLoading: false }) }
 
-  return { openModal, closeModal, loadingModal, stateModal, modalData, dataModal }
+  return { openModal, closeModal, loadingModal, stateModal, modalData, dataModal, loadedModal, resetDataModal }
 }
 
 export default useModal

@@ -98,9 +98,13 @@ export const PraySectionStyled = styled.section`
       text-transform: uppercase;
       font-family: 'Helvetica Neue';
       font-weight: medium;
-
       position: relative;
       display: inline-block;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #ffd145;
+      }
 
       & .tiptext {
         visibility: hidden;

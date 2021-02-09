@@ -41,6 +41,7 @@ export default class MyDocument extends Document {
           <meta name="copyright" content="La Casa de mi Padre" />
           <meta name="robots" content="index" />
           <meta name="robots" content="follow" />
+          <link rel="icon" href="/favicon.ico" />
 
           <link rel="preload" href="/fonts/Helvetica-Neue/HelveticaNeue-MediumExtObl.otf" as="font" crossOrigin="" />
           <link rel="preload" href="/fonts/Helvetica-Neue/HelveticaNeue-BlackCond.otf" as="font" crossOrigin="" />
@@ -63,10 +64,6 @@ export default class MyDocument extends Document {
           <meta property="twitter:description" content="Somos una iglesia cristiana, alegre, sencilla, con corazón de familia, donde todos tienen un lugar." />
           <meta property="twitter:image" content="https://lcpcaracas.org/img/lcp-public.jpg" />
 
-          {/* favicon */}
-          {/* webfonts */}
-          {/* styles */}
-          {/* script/js */}
         </Head>
         <body>
           <Main />

@@ -69,7 +69,7 @@ export const HeaderBg = styled.div`
   width: 100%;
   filter: brightness(0.8);
   height: 100vh;
-  background: radial-gradient(circle,#b1ad93 0%,#48443b 100%);
+  background: radial-gradient(circle,#b1ad93 0%,#111e18 100%);
 
   & > div {
     height: 100vh;
