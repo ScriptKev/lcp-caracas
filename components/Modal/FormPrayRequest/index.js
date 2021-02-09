@@ -17,7 +17,7 @@ const FormPrayRequest = () => {
     setDisableBtn(true)
     loadingModal()
 
-    window.fetch('http://localhost:3000/api/email', {
+    window.fetch('/api/email', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(data)
@@ -61,7 +61,7 @@ const FormPrayRequest = () => {
         <br />
         <FieldInput
           name="name"
-          placeholder="Nombre"
+          placeholder="Nombre y Apellido"
           register={register}
           rules={rules.name}
           type="text"
