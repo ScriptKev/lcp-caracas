@@ -1,7 +1,11 @@
+import { useContext } from 'react'
 import Image from 'next/image'
+import { ModalContext } from 'context/ModalContext'
 import { FirstSectionBg, FirstSectionStyled, PraySectionBg, PraySectionStyled } from './styled'
 
 const MainHome = () => {
+  const [openModal] = useContext(ModalContext)
+
   return (
     <main>
       <FirstSectionStyled>
@@ -41,9 +45,9 @@ const MainHome = () => {
           />
         </PraySectionBg>
         <div className="home__pray--CTA">
-          <button>
+          <button onClick={() => openModal()}>
             Peticiones
-            <span className="tiptext">En Construcción</span>
+            {/* <span className="tiptext">En Construcción</span> */}
           </button>
         </div>
 

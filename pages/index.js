@@ -22,7 +22,6 @@ export default function Home() {
     <>
       <Head>
         <title>La Casa de mi Padre - Donde todos tienen un lugar</title>
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       {
