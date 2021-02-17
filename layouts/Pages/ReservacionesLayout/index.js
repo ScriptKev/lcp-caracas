@@ -13,7 +13,7 @@ export const FormBgStyled = styled.div`
   max-width: 470px;
   width: 100%;
   margin: auto;
-  height: 400px;
+  height: 320px;
   background-image: url('/img/formHeader-21-02-2021.webp');
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -25,12 +25,12 @@ export const FormBgStyled = styled.div`
 
   @media screen and (max-width: 425px) {
     background-image: url('/img/formHeader-21-02-2021.webp');
-    height: 280px;
+    height: 250px;
     width: 100%;
     margin: 0 auto;
   }
   @media screen and (min-width: 375px) and (max-width: 425px) {
-    height: 300px;
+    height: 250px;
   }
 `
 

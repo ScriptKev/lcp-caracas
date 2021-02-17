@@ -6,7 +6,7 @@ const HeaderHome = () => {
     <HeaderStyled>
       <HeaderBg>
         <Image
-          src="/img/HeaderBg-14-02-21.webp"
+          src="/img/HeaderBg-21-02-21.webp"
           alt="headerBg"
           width={1920}
           height={1080}
