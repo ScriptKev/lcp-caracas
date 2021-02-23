@@ -68,6 +68,12 @@ export const HeaderBg = styled.div`
   z-index: -1;
   width: 100%;
   filter: brightness(0.8);
+  /* background-image: url('/img/HeaderBg-21-02-21.webp');
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  -webkit-background-position: center;
+  background-position: center; */
   height: 100vh;
   background: radial-gradient(circle,#b1ad93 0%,#111e18 100%);
 
