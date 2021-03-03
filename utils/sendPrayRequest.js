@@ -1,5 +1,5 @@
 import sgMail from '@sendgrid/mail'
-sgMail.setApiKey(process.env.SENDGRID_API_KEY || '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')
+sgMail.setApiKey('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')
 
 const sendPrayRequest = async (name, email, prayRequest, req, res) => {
   const msg = {

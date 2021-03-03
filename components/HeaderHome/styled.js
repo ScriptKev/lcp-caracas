@@ -16,10 +16,10 @@ export const HeaderStyled = styled.header`
   & h1 {
     font-family: 'Helvetica Neue';
     font-weight: 500;
-    color: #1e478dcc;
+    color: white;
     font-size: 3rem;
     text-align:center;
-    /* text-shadow: 2px 2px 10px #00000075; */
+    text-shadow: 2px 2px 10px #00000075;
   }
 
   & h2 {
@@ -30,14 +30,14 @@ export const HeaderStyled = styled.header`
     justify-content: center;
     letter-spacing: 7.2px;
   }
-  
+
   & .header__quote {
     display: flex;
     font-family: 'Helvetica Neue';
-    place-content: flex-end;
+    place-content: center;
     font-weight: 200;
     font-size: 1.4rem;
-    color: #1e478dcc;
+    color: white;
 
     & > div {
       color: #FFC000;
@@ -75,7 +75,7 @@ export const HeaderBg = styled.div`
   -webkit-background-position: center;
   background-position: center; */
   height: 100vh;
-  background: radial-gradient(circle,#b1ad93 0%,#111e18 100%);
+  background: radial-gradient(circle,#1e478dcc 0%, #091832 100%);
 
   & > div {
     height: 100vh;

@@ -8,6 +8,7 @@ import Select from 'react-select'
 import { AddReservation } from 'services/googleApi'
 import { ModalContext } from 'context/ModalContext'
 import ChipError from './ChipError'
+import { db } from 'services/firebase'
 
 const FormReservation = ({ totalReservationsFirstService, totalReservationsSecondService }) => {
   const [openModal, , loadingModal, modalData] = useContext(ModalContext)
@@ -26,7 +27,8 @@ const FormReservation = ({ totalReservationsFirstService, totalReservationsSecon
     { value: '10', label: '10' },
   ]
 
-  const onSubmit = (data, e) => {
+  const onSubmit = (data) => {
+    console.log(data)
     setDisableBtn(true)
     loadingModal()
     AddReservation(data)
@@ -35,6 +37,24 @@ const FormReservation = ({ totalReservationsFirstService, totalReservationsSecon
         setDisableBtn(false)
         modalData(data)
         openModal()
+
+        const date = new Date()
+        const options = { year: 'numeric', month: 'long', day: 'numeric' }
+        const dateLocal = date.toLocaleDateString('es-ES', options)
+
+        db.collection("usuariosReservados").add({
+          date: dateLocal,
+          fullName: `${data.name} ${data.lastname}`,
+          phone: data.phone,
+          reservations: Number(data.reservations.value),
+          schedule: data.worshipShedule
+        })
+          .then((docRef) => {
+            console.log("Document written with usuariosReservados ID: ", docRef.id);
+          })
+          .catch((error) => {
+            console.error("Error usuariosReservados adding document: ", error);
+          });
       })
   }
 
