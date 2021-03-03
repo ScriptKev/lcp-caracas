@@ -5,7 +5,7 @@ const HeaderHome = () => {
   return (
     <HeaderStyled>
       <HeaderBg>
-        <Image
+        {/* <Image
           src="/img/HeaderBg-28-02-21.webp"
           alt="headerBg"
           width={1920}
@@ -13,20 +13,21 @@ const HeaderHome = () => {
           priority
           objectFit="cover"
           quality={100}
-        />
+        /> */}
       </HeaderBg>
       <ContainerStyled>
         <div
           className="header__title"
           style={{ margin: 'auto', textAlign: 'start' }}
         >
-          {/* <h1>
-            "El <em>amor</em> los<br />
-            mantendrá unidos".<br />
+          <h1>
+            La Mayor <br />
+            Demostración<br />
+            de <em>AMOR</em><br />
           </h1>
-          <div className='header__quote'>Col. 3:14</div> */}
+          <div className='header__quote'>Rom. 5:8</div>
 
-          <img
+          {/* <img
             alt='headerBg'
             src='img/titulo-header-07-02-21.png'
             style={{
@@ -38,7 +39,7 @@ const HeaderHome = () => {
               alignItems: 'center',
               minWidth: '290px'
             }}
-          />
+          /> */}
 
           {/* <SloganStyled>
             <h2>

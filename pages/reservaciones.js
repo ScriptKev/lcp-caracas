@@ -56,10 +56,10 @@ export default function Reservaciones() {
         {
           reservationsStatus ?
             <>
-              <FormBgStyled />
-              {/* <FormDescription>
+              {/* <FormBgStyled /> */}
+              <FormDescription>
                 <span>Servicio<br /></span>
-                <p>Dom. 07/02/2021</p>
+                <p>Dom. 07/03/2021</p>
 
                 <Info>
                   <img src='/icons/info.svg' width='22px' style={{ marginRight: '10px' }} />
@@ -67,7 +67,7 @@ export default function Reservaciones() {
                     <p style={{ textAlign: 'start' }}>Se requiere el uso de mascarilla <br className='spaceEnter' /> en todas las áreas</p>
                   </div>
                 </Info>
-              </FormDescription> */}
+              </FormDescription>
 
               <FormSeccionStyled>
                 <FormReservation
