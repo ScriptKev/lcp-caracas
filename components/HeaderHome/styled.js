@@ -75,7 +75,7 @@ export const HeaderBg = styled.div`
   -webkit-background-position: center;
   background-position: center; */
   height: 100vh;
-  background: radial-gradient(circle,#1e478dcc 0%, #091832 100%);
+  background: radial-gradient(circle,#abababcc 0%,#2a2a2a 100%);
 
   & > div {
     height: 100vh;
