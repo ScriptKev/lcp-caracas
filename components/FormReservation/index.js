@@ -59,8 +59,8 @@ const FormReservation = ({ totalReservationsFirstService, totalReservationsSecon
   }
 
   if (
-    totalReservationsFirstService >= 100 &&
-    totalReservationsSecondService >= 100
+    totalReservationsFirstService >= 90 &&
+    totalReservationsSecondService >= 90
   )
     return <h1 style={{ marginTop: '50px' }}>Sin Cupos</h1>
 
@@ -131,7 +131,7 @@ const FormReservation = ({ totalReservationsFirstService, totalReservationsSecon
 
         <br />
         {
-          totalReservationsFirstService >= 100
+          totalReservationsFirstService >= 90
             ? <div style={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'center' }}>
               <p style={{ marginRight: '5px' }}>1° Servicio</p> <ChipError title='No disponible' />
             </div>
@@ -146,7 +146,7 @@ const FormReservation = ({ totalReservationsFirstService, totalReservationsSecon
             />
         }
         {
-          totalReservationsSecondService >= 100
+          totalReservationsSecondService >= 90
             ?
             <div style={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'center' }}>
               <p style={{ marginRight: '5px' }}>2° Servicio</p> <ChipError title='No disponible' />
