@@ -14,7 +14,7 @@ export const FormBgStyled = styled.div`
   width: 100%;
   margin: 60px auto auto auto;
   height: 320px;
-  background-image: url('/img/formHeader-14-03-2021.webp');
+  background-image: url('/img/formHeader-21-03-2021.webp');
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
@@ -24,7 +24,7 @@ export const FormBgStyled = styled.div`
   box-shadow: 1px 1px 10px ${({ theme }) => theme.shadows.primary};
 
   @media screen and (max-width: 425px) {
-    background-image: url('/img/formHeader-14-03-2021.webp');
+    background-image: url('/img/formHeader-21-03-2021.webp');
     height: 250px;
     width: 100%;
     margin: 0 auto;
