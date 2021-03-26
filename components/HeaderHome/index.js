@@ -6,7 +6,7 @@ const HeaderHome = () => {
     <HeaderStyled>
       <HeaderBg>
         <Image
-          src="/img/HeaderBg-07-03-21/1.webp"
+          src="/img/HeaderBg.webp"
           alt="headerBg"
           width={1920}
           height={1080}
@@ -16,18 +16,18 @@ const HeaderHome = () => {
         />
       </HeaderBg>
       <ContainerStyled>
-        {/* <div
+        <div
           className="header__title"
           style={{ margin: 'auto', textAlign: 'start' }}
-        > */}
-        {/* <h1>
-            La Mayor <br />
-            Demostración<br />
-            de <em>AMOR</em><br />
+        >
+          <h1>
+            <i className='prhase1'> ¡Alégrate! </i> <br />
+            <small className='prhase2'>TU REY</small> <br />
+            <p className='prhase3'>VIENE A TI</p>
           </h1>
-          <div className='header__quote'>Rom. 5:8</div> */}
+          {/* <div className='header__quote'>Rom. 5:8</div> */}
 
-        <img
+          {/* <img
           alt='headerBg'
           src='/img/Letras.webp'
           style={{
@@ -39,9 +39,9 @@ const HeaderHome = () => {
             alignItems: 'center',
             minWidth: '290px'
           }}
-        />
+        /> */}
 
-        {/* <SloganStyled>
+          {/* <SloganStyled>
             <h2>
               donde
               <div style={{ color: '#FFC000' }}>todos</div>
@@ -49,7 +49,7 @@ const HeaderHome = () => {
               <div style={{ color: '#FFC000' }}>un</div>lugar
             </h2>
           </SloganStyled> */}
-        {/* </div> */}
+        </div>
       </ContainerStyled>
     </HeaderStyled>
   )
