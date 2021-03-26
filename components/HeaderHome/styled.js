@@ -20,6 +20,23 @@ export const HeaderStyled = styled.header`
     font-size: 3rem;
     text-align:center;
     text-shadow: 2px 2px 10px #00000075;
+
+    & .prhase1 {
+      font-weight: 600;
+      letter-spacing: 5px;
+      font-size: 2rem;
+    }
+
+    & .prhase2 {
+      font-weight: 600;
+      font-size: 3rem;
+    }
+
+    & .prhase3 {
+      font-weight: 200;
+      font-size: 1rem;
+      letter-spacing: 4px;
+    }
   }
 
   & h2 {
@@ -46,10 +63,27 @@ export const HeaderStyled = styled.header`
 
   @media (max-width: 768px) {
     h1 {
-      font-size: 25px;
+      /* font-size: 25px;
       text-align: center;
       font-weight: 500;
-      line-height: 30px;
+      line-height: 30px; */
+
+      & .prhase1 {
+      font-weight: 600;
+      letter-spacing: 1;
+      font-size: 2rem;
+    }
+
+    & .prhase2 {
+      font-weight: 600;
+      font-size: 3rem;
+    }
+
+    & .prhase3 {
+      font-weight: 200;
+      font-size: 1rem;
+      letter-spacing: 5px;
+    }
     }
 
     h2 {
