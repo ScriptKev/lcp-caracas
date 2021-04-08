@@ -9167,9 +9167,9 @@ react-helmet-async@^1.0.2:
     react-fast-compare "^3.2.0"
     shallowequal "^1.1.0"
 
-react-hook-form@^6.14.2:
-  version "6.14.2"
-  resolved "https://registry.npmjs.org/react-hook-form/-/react-hook-form-6.14.2.tgz"
+react-hook-form@^7.0.4:
+  version "7.0.4"
+  resolved "https://registry.yarnpkg.com/react-hook-form/-/react-hook-form-7.0.4.tgz#efd800289f3e6aa237fde5121f4ef7ba7653fb3b"
 
 react-hotkeys@2.0.0:
   version "2.0.0"
