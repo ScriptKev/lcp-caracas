@@ -1,33 +1,22 @@
-import Image from 'next/image'
-import { ContainerStyled, HeaderBg, HeaderStyled, SloganStyled } from './styled'
+import Image from 'next/image';
+import { ContainerStyled, HeaderBg, HeaderStyled, SloganStyled } from './styled';
 
 const HeaderHome = () => {
   return (
     <HeaderStyled>
       <HeaderBg>
-        <Image
-          src="/img/HeaderBg.webp"
-          alt="headerBg"
-          width={1920}
-          height={1080}
-          priority
-          objectFit="cover"
-          quality={100}
-        />
+        <Image src='/img/HeaderBg-11-04-21.webp' alt='headerBg' width={1920} height={1080} priority objectFit='cover' quality={100} />
       </HeaderBg>
-      <ContainerStyled>
-        <div
-          className="header__title"
-          style={{ margin: 'auto', textAlign: 'start' }}
-        >
+      {/* <ContainerStyled>
+        <div className='header__title' style={{ margin: 'auto', textAlign: 'start' }}>
           <h1>
             <i className='prhase1'> ¡Alégrate! </i> <br />
             <small className='prhase2'>TU REY</small> <br />
             <p className='prhase3'>VIENE A TI</p>
-          </h1>
-          {/* <div className='header__quote'>Rom. 5:8</div> */}
+          </h1> */}
+      {/* <div className='header__quote'>Rom. 5:8</div> */}
 
-          {/* <img
+      {/* <img
           alt='headerBg'
           src='/img/Letras.webp'
           style={{
@@ -41,7 +30,7 @@ const HeaderHome = () => {
           }}
         /> */}
 
-          {/* <SloganStyled>
+      {/* <SloganStyled>
             <h2>
               donde
               <div style={{ color: '#FFC000' }}>todos</div>
@@ -49,10 +38,10 @@ const HeaderHome = () => {
               <div style={{ color: '#FFC000' }}>un</div>lugar
             </h2>
           </SloganStyled> */}
-        </div>
-      </ContainerStyled>
+      {/* </div>
+      </ContainerStyled> */}
     </HeaderStyled>
-  )
-}
+  );
+};
 
-export default HeaderHome
+export default HeaderHome;
