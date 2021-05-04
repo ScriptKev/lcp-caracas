@@ -6,19 +6,17 @@ export const HeaderStyled = styled.header`
   display: flex;
   justify-content: center;
   align-items: center;
-;
-
   & em {
-      color: #FFC000;
-      font-style: normal;
-    }
+    color: #ffc000;
+    font-style: normal;
+  }
 
   & h1 {
     font-family: 'Helvetica Neue';
     font-weight: 500;
     color: white;
     font-size: 3rem;
-    text-align:center;
+    text-align: center;
     text-shadow: 2px 2px 10px #00000075;
 
     & .prhase1 {
@@ -57,7 +55,7 @@ export const HeaderStyled = styled.header`
     color: white;
 
     & > div {
-      color: #FFC000;
+      color: #ffc000;
     }
   }
 
@@ -69,21 +67,21 @@ export const HeaderStyled = styled.header`
       line-height: 30px; */
 
       & .prhase1 {
-      font-weight: 600;
-      letter-spacing: 1;
-      font-size: 2rem;
-    }
+        font-weight: 600;
+        letter-spacing: 1;
+        font-size: 2rem;
+      }
 
-    & .prhase2 {
-      font-weight: 600;
-      font-size: 3rem;
-    }
+      & .prhase2 {
+        font-weight: 600;
+        font-size: 3rem;
+      }
 
-    & .prhase3 {
-      font-weight: 200;
-      font-size: 1rem;
-      letter-spacing: 5px;
-    }
+      & .prhase3 {
+        font-weight: 200;
+        font-size: 1rem;
+        letter-spacing: 5px;
+      }
     }
 
     h2 {
@@ -102,14 +100,14 @@ export const HeaderBg = styled.div`
   z-index: -1;
   width: 100%;
   filter: brightness(0.8);
-  /* background-image: url('/img/HeaderBg-21-02-21.webp');
+  background-image: url('/img/HeaderBg-09-05-21.webp');
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
   -webkit-background-position: center;
-  background-position: center; */
+  background-position: center;
   height: 100vh;
-  background: radial-gradient(circle,#abababcc 0%,#2a2a2a 100%);
+  /* background: radial-gradient(circle, #265465 0%, #2a2a2a 100%); */
 
   & > div {
     height: 100vh;
@@ -125,7 +123,6 @@ export const ContainerStyled = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
 
   @media (max-width: 425px) {
     padding: 10px 5px 5px 5px;

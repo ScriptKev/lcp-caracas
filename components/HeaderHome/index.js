@@ -5,7 +5,7 @@ const HeaderHome = () => {
   return (
     <HeaderStyled>
       <HeaderBg>
-        <Image src='/img/HeaderBg-09-05-21.webp' alt='headerBg' width={1920} height={1080} priority objectFit='cover' quality={100} />
+        {/* <Image src='/img/HeaderBg-09-05-21.webp' alt='headerBg' width={1920} height={1080} priority objectFit='cover' quality={100} /> */}
       </HeaderBg>
       {/* <ContainerStyled>
         <div className='header__title' style={{ margin: 'auto', textAlign: 'start' }}>
@@ -16,19 +16,37 @@ const HeaderHome = () => {
           </h1> */}
       {/* <div className='header__quote'>Rom. 5:8</div> */}
 
-      {/* <img
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', padding: '0 20px' }}>
+        <img
           alt='headerBg'
-          src='/img/Letras.webp'
+          src='/img/HeaderBg-09-05-21-letras1.webp'
+          width='500px'
+          style={{
+            display: 'flex',
+            width: '100%',
+            margin: '0 auto 200px auto',
+            maxWidth: '400px',
+            justifyContent: 'center',
+            alignItems: 'center',
+            minWidth: '270px',
+          }}
+        />
+
+        <img
+          alt='headerBg'
+          src='/img/HeaderBg-09-05-21-letras2.webp'
+          width='500px'
           style={{
             display: 'flex',
             width: '70%',
-            margin: 'auto',
-            maxWidth: '650px',
+            margin: '0 auto -160px auto',
+            maxWidth: '230px',
             justifyContent: 'center',
             alignItems: 'center',
-            minWidth: '290px'
+            minWidth: '190px',
           }}
-        /> */}
+        />
+      </div>
 
       {/* <SloganStyled>
             <h2>

@@ -18,16 +18,16 @@ const NavBar = ({ light, onlyFlag = false }) => {
           </Link>
         </FlagStyled>
 
-        {/* {!onlyFlag && (
+        {!onlyFlag && (
           <div className='reservationsNavMobile'>
-            <Link href="/reservaciones">
+            <Link href='/reservaciones'>
               <a>
                 <span
-                  className="route__reservations"
+                  className='route__reservations'
                   style={{
                     border: '2.5px solid #FFC000',
                     borderRadius: '20px',
-                    padding: '5px'
+                    padding: '5px',
                   }}
                 >
                   Reservaciones
@@ -35,13 +35,13 @@ const NavBar = ({ light, onlyFlag = false }) => {
               </a>
             </Link>
 
-            <span className="route__contact" style={{ marginLeft: '10px' }}>
-              <Link href="/contactanos">
+            <span className='route__contact' style={{ marginLeft: '10px' }}>
+              <Link href='/contactanos'>
                 <a>Contáctanos</a>
               </Link>
             </span>
           </div>
-        )} */}
+        )}
       </ContainerStyled>
     </NavStyled>
   )
