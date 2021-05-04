@@ -68,7 +68,7 @@ export const FieldRadioStyled = styled.div`
   display: flex;
   justify-content: start;
   align-items: center;
-  width: 100%;
+  /* width: 100%; */
   margin-top: 10px;
   height: min-content;
   & label {
@@ -147,6 +147,6 @@ export const ChipErrorStyled = {
 
   Title: styled.span`
     color: #f44336;
-    font-size: 0.8rem
-  `
+    font-size: 0.8rem;
+  `,
 }

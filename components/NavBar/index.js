@@ -1,4 +1,3 @@
-
 import PropTypes from 'prop-types'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -8,23 +7,18 @@ const NavBar = ({ light, onlyFlag = false }) => {
   return (
     <NavStyled
       // @ts-ignore
-      light={light}>
+      light={light}
+    >
       <ContainerStyled>
         <FlagStyled>
-          <Link href="/">
+          <Link href='/'>
             <a>
-              <Image
-                src="/img/logo.webp"
-                alt="Picture of the author"
-                width={65}
-                height={36}
-                priority
-              />
+              <Image src='/img/logo.webp' alt='Picture of the author' width={65} height={36} priority />
             </a>
           </Link>
         </FlagStyled>
 
-        {!onlyFlag && (
+        {/* {!onlyFlag && (
           <div className='reservationsNavMobile'>
             <Link href="/reservaciones">
               <a>
@@ -47,7 +41,7 @@ const NavBar = ({ light, onlyFlag = false }) => {
               </Link>
             </span>
           </div>
-        )}
+        )} */}
       </ContainerStyled>
     </NavStyled>
   )

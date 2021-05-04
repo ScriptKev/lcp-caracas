@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const FormSeccionStyled = styled.section`
   width: 100%;
@@ -7,14 +7,14 @@ export const FormSeccionStyled = styled.section`
   justify-content: center;
   align-items: center;
   margin-top: 20px;
-`;
+`
 
 export const FormBgStyled = styled.div`
   max-width: 470px;
   width: 100%;
   margin: 60px auto auto auto;
   height: 425px;
-  background-image: url('/img/formHeader-11-04-2021.webp');
+  background-image: url('/img/formHeader-09-05-2021.webp');
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
@@ -24,7 +24,7 @@ export const FormBgStyled = styled.div`
   box-shadow: 1px 1px 10px ${({ theme }) => theme.shadows.primary};
 
   @media screen and (max-width: 425px) {
-    background-image: url('/img/formHeader-11-04-2021.webp');
+    background-image: url('/img/formHeader-09-05-2021.webp');
     height: 300px;
     width: 100%;
     margin: 0 auto;
@@ -32,7 +32,7 @@ export const FormBgStyled = styled.div`
   @media screen and (min-width: 375px) and (max-width: 425px) {
     height: 250px;
   }
-`;
+`
 
 export const FormDescription = styled.div`
   max-width: 600px;
@@ -48,7 +48,7 @@ export const FormDescription = styled.div`
 
   @media screen and (min-width: 375px) and (max-width: 425px) {
   }
-`;
+`
 
 export const Info = styled.div`
   display: flex;
@@ -73,4 +73,4 @@ export const Info = styled.div`
   @media screen and (max-width: 425px) {
     font-size: 0.8rem;
   }
-`;
+`
