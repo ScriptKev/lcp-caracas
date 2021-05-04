@@ -5,7 +5,7 @@ const HeaderHome = () => {
   return (
     <HeaderStyled>
       <HeaderBg>
-        {/* <Image src='/img/HeaderBg-09-05-21.webp' alt='headerBg' width={1920} height={1080} priority objectFit='cover' quality={100} /> */}
+        <Image src='/img/HeaderBg-09-05-21.webp' alt='headerBg' width={1920} height={1080} priority objectFit='cover' quality={100} />
       </HeaderBg>
       {/* <ContainerStyled>
         <div className='header__title' style={{ margin: 'auto', textAlign: 'start' }}>

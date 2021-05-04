@@ -100,14 +100,14 @@ export const HeaderBg = styled.div`
   z-index: -1;
   width: 100%;
   filter: brightness(0.8);
-  background-image: url('/img/HeaderBg-09-05-21.webp');
+  /* background-image: url('/img/HeaderBg-09-05-21.webp');
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
   -webkit-background-position: center;
-  background-position: center;
+  background-position: center; */
   height: 100vh;
-  /* background: radial-gradient(circle, #265465 0%, #2a2a2a 100%); */
+  background: radial-gradient(circle, #2180a3 0%, #2a2a2a 100%);
 
   & > div {
     height: 100vh;
