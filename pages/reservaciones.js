@@ -11,6 +11,7 @@ export default function Reservaciones() {
   const [windowDimension, setWindowDimension] = useState(null)
   const [totalReservationsFirstService, setTotalReservationsFirstService] = useState(0)
   const [totalReservationsSecondService, setTotalReservationsSecondService] = useState(0)
+  const [totalReservationsTertiaryService, setTotalReservationsTertiaryService] = useState(0)
   const isMobile = windowDimension <= 640
 
   const handleResize = () => setWindowDimension(window.innerWidth)
@@ -29,6 +30,8 @@ export default function Reservaciones() {
             setTotalReservationsFirstService(doc.data().total)
           } else if (doc.id === 'totalReservationsSecondService') {
             setTotalReservationsSecondService(doc.data().total)
+          } else if (doc.id === 'totalReservationsTertiaryService') {
+            setTotalReservationsTertiaryService(doc.data().total)
           } else {
             console.error('No se ha encontrado el documento')
           }
@@ -79,6 +82,7 @@ export default function Reservaciones() {
               <FormReservation
                 totalReservationsFirstService={totalReservationsFirstService}
                 totalReservationsSecondService={totalReservationsSecondService}
+                totalReservationsTertiaryService={totalReservationsTertiaryService}
               />
             </FormSeccionStyled>
           </>

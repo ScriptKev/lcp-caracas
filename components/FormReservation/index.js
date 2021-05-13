@@ -10,7 +10,7 @@ import { ModalContext } from 'context/ModalContext'
 import ChipError from './ChipError'
 import { db } from 'services/firebase'
 
-const FormReservation = ({ totalReservationsFirstService, totalReservationsSecondService }) => {
+const FormReservation = ({ totalReservationsFirstService, totalReservationsSecondService, totalReservationsTertiaryService }) => {
   const [openModal, , loadingModal, modalData] = useContext(ModalContext)
   const [disableBtn, setDisableBtn] = useState(false)
   const { control, register, handleSubmit, errors, reset } = useForm()
@@ -58,7 +58,8 @@ const FormReservation = ({ totalReservationsFirstService, totalReservationsSecon
     })
   }
 
-  if (totalReservationsFirstService >= 60 && totalReservationsSecondService >= 60) return <h1 style={{ marginTop: '50px' }}>Sin Cupos</h1>
+  if (totalReservationsFirstService >= 60 && totalReservationsSecondService >= 60 && totalReservationsTertiaryService >= 60)
+    return <h1 style={{ marginTop: '50px' }}>Sin Cupos</h1>
 
   return (
     <FormStyled onSubmit={handleSubmit(onSubmit)}>
@@ -123,6 +124,21 @@ const FormReservation = ({ totalReservationsFirstService, totalReservationsSecon
               rules={rules.worshipShedule}
               type='radio'
               labelTitle='2° Servicio 11:00 a.m.'
+            />
+          )}
+          {totalReservationsTertiaryService >= 60 ? (
+            <div style={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'center' }}>
+              <p style={{ marginRight: '5px' }}>1° Servicio</p> <ChipError title='No disponible' />
+            </div>
+          ) : (
+            <FieldInput
+              value='Tercer Servicio'
+              name='worshipShedule'
+              id='worshipShedule__Tertiary'
+              register={register}
+              rules={rules.worshipShedule}
+              type='radio'
+              labelTitle='3° Servicio 12:30 p.m.'
             />
           )}
           {errors.worshipShedule && <ErrorMsgStyled>{errors.worshipShedule.message}</ErrorMsgStyled>}

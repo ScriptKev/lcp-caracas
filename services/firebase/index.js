@@ -14,14 +14,16 @@ export const loginWithGoogle = () => {
 }
 
 export const CreateUser = async (email, password) => {
-  return await auth.createUserWithEmailAndPassword(email, password)
-    .then(user => user)
+  return await auth
+    .createUserWithEmailAndPassword(email, password)
+    .then((user) => user)
     .catch(console.error)
 }
 
 export const SignIn = async (email, password) => {
-  return await auth.signInWithEmailAndPassword(email, password)
-    .then(user => {
+  return await auth
+    .signInWithEmailAndPassword(email, password)
+    .then((user) => {
       console.log('SignIn', user)
       return user
     })
@@ -40,6 +42,7 @@ export const TotalReservationsUpdateIncrement = (sheduleService, total) => {
 
   const totalReservationsFirstService = db.collection('reservaciones').doc('totalReservationsFirstService')
   const totalReservationsSecondService = db.collection('reservaciones').doc('totalReservationsSecondService')
+  const totalReservationsTertiaryService = db.collection('reservaciones').doc('totalReservationsTertiaryService')
   const FieldValue = firebase.firestore.FieldValue
 
   if (sheduleService === 'Primer Servicio') {
@@ -47,16 +50,18 @@ export const TotalReservationsUpdateIncrement = (sheduleService, total) => {
       .update({
         total: FieldValue.increment(total),
       })
-      .then(() =>
-        console.log('Reservaciones total sumando: ', total, 'reservaciones')
-      )
+      .then(() => console.log('Reservaciones total sumando: ', total, 'reservaciones'))
   } else if (sheduleService === 'Segundo Servicio') {
     totalReservationsSecondService
       .update({
         total: FieldValue.increment(total),
       })
-      .then(() =>
-        console.log('Reservaciones total sumando: ', total, 'reservaciones')
-      )
+      .then(() => console.log('Reservaciones total sumando: ', total, 'reservaciones'))
+  } else if (sheduleService === 'Tercer Servicio') {
+    totalReservationsTertiaryService
+      .update({
+        total: FieldValue.increment(total),
+      })
+      .then(() => console.log('Reservaciones total sumando: ', total, 'reservaciones'))
   }
 }

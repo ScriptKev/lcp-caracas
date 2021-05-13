@@ -6,9 +6,10 @@ import { ModalContext } from 'context/ModalContext'
 const TicketReservation = ({ userTicket, closeModal }) => {
   const [, , , , , resetDataModal] = useContext(ModalContext)
 
-  const worshipSheduleDate = Shedule => {
+  const worshipSheduleDate = (Shedule) => {
     if (Shedule === 'Primer Servicio') return 'Hora: 9:00 a.m'
     if (Shedule === 'Segundo Servicio') return 'Hora: 11:00 a.m'
+    if (Shedule === 'Tercer Servicio') return 'Hora: 12:30 p.m'
     else return 'Hubo un error en el horario'
   }
 
@@ -17,24 +18,17 @@ const TicketReservation = ({ userTicket, closeModal }) => {
       <span style={{ fontSize: '18px', color: '#1a5187', marginBottom: '10px' }}>
         ¡Reservación Exitosa!
         <br />
-        <img
-          src="/icons/icon-success.svg"
-          alt="success"
-          width="30px"
-          style={{ marginTop: '10px' }}
-        />
+        <img src='/icons/icon-success.svg' alt='success' width='30px' style={{ marginTop: '10px' }} />
       </span>
       <div>
         <span>{userTicket.fullName}</span> <br />
         <span>Reservó: {userTicket.reservations}</span> <br />
-        <span>
-          {worshipSheduleDate(userTicket.worshipShedule)}
-        </span>
+        <span>{worshipSheduleDate(userTicket.worshipShedule)}</span>
         <br />
       </div>
       <br />
       <Button
-        title="Volver al inicio"
+        title='Volver al inicio'
         primary
         handleClick={() => {
           closeModal()
