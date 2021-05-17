@@ -1749,9 +1749,9 @@
     prop-types "^15.6.1"
     react-lifecycles-compat "^3.0.4"
 
-"@react-leaflet/core@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.npmjs.org/@react-leaflet/core/-/core-1.0.2.tgz"
+"@react-leaflet/core@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@react-leaflet/core/-/core-1.1.0.tgz#389b2b373f1da4caeb3c4cf6f33d84561c58d504"
 
 "@sendgrid/client@^7.4.2":
   version "7.4.2"
@@ -9199,11 +9199,11 @@ react-is@^17.0.1:
   version "17.0.1"
   resolved "https://registry.npmjs.org/react-is/-/react-is-17.0.1.tgz"
 
-react-leaflet@^3.0.5:
-  version "3.0.5"
-  resolved "https://registry.npmjs.org/react-leaflet/-/react-leaflet-3.0.5.tgz"
+react-leaflet@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/react-leaflet/-/react-leaflet-3.2.0.tgz#8d5d05beab3f9e52665738ad737bb7b1da99f30b"
   dependencies:
-    "@react-leaflet/core" "^1.0.2"
+    "@react-leaflet/core" "^1.1.0"
 
 react-lifecycles-compat@^3.0.4:
   version "3.0.4"
