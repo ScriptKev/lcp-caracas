@@ -108,7 +108,7 @@ const FormReservation = ({ totalReservationsFirstService, totalReservationsSecon
               register={register}
               rules={rules.worshipShedule}
               type='radio'
-              labelTitle='1° Servicio 9:00 a.m.'
+              labelTitle='1° Servicio 8:30 a.m.'
             />
           )}
           {totalReservationsSecondService >= 60 ? (
@@ -123,7 +123,7 @@ const FormReservation = ({ totalReservationsFirstService, totalReservationsSecon
               register={register}
               rules={rules.worshipShedule}
               type='radio'
-              labelTitle='2° Servicio 11:00 a.m.'
+              labelTitle='2° Servicio 10:15 a.m.'
             />
           )}
           {totalReservationsTertiaryService >= 60 ? (
@@ -138,7 +138,7 @@ const FormReservation = ({ totalReservationsFirstService, totalReservationsSecon
               register={register}
               rules={rules.worshipShedule}
               type='radio'
-              labelTitle='3° Servicio 12:30 p.m.'
+              labelTitle='3° Servicio 12:00 p.m.'
             />
           )}
           {errors.worshipShedule && <ErrorMsgStyled>{errors.worshipShedule.message}</ErrorMsgStyled>}
