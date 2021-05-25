@@ -58,7 +58,7 @@ export default function Reservaciones() {
           display: 'flex',
           flexWrap: windowDimension <= 1100 && 'wrap',
           justifyContent: 'center',
-          alignItems: 'center',
+          alignItems: 'start',
           maxWidth: '1000px',
           margin: '0 auto',
         }}
