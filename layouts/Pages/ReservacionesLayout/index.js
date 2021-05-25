@@ -6,7 +6,7 @@ export const FormSeccionStyled = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 35px;
 `
 
 export const FormBgStyled = styled.div`
