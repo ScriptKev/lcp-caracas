@@ -7,9 +7,9 @@ const TicketReservation = ({ userTicket, closeModal }) => {
   const [, , , , , resetDataModal] = useContext(ModalContext)
 
   const worshipSheduleDate = (Shedule) => {
-    if (Shedule === 'Primer Servicio') return 'Hora: 9:00 a.m'
-    if (Shedule === 'Segundo Servicio') return 'Hora: 11:00 a.m'
-    if (Shedule === 'Tercer Servicio') return 'Hora: 12:30 p.m'
+    if (Shedule === 'Primer Servicio') return 'Hora: 8:30 a.m'
+    if (Shedule === 'Segundo Servicio') return 'Hora: 10:15 a.m'
+    if (Shedule === 'Tercer Servicio') return 'Hora: 12:00 p.m'
     else return 'Hubo un error en el horario'
   }
 
