@@ -7,7 +7,7 @@ import NavBarMobile from 'components/NavBarMobile'
 import { FormSeccionStyled, FormBgStyled, FormDescription, Info } from 'layouts/Pages/ReservacionesLayout'
 
 export default function Reservaciones() {
-  const [reservationsStatus, setReservationsStatus] = useState(false)
+  const [reservationsStatus, setReservationsStatus] = useState(true)
   const [windowDimension, setWindowDimension] = useState(null)
   const [totalReservationsFirstService, setTotalReservationsFirstService] = useState(0)
   const [totalReservationsSecondService, setTotalReservationsSecondService] = useState(0)
@@ -56,6 +56,7 @@ export default function Reservaciones() {
           paddingBottom: isMobile && '70px',
           minHeight: '110vh',
           display: 'flex',
+          flexDirection: 'column',
           flexWrap: windowDimension <= 1100 && 'wrap',
           justifyContent: 'center',
           alignItems: 'center',
@@ -65,18 +66,23 @@ export default function Reservaciones() {
       >
         {reservationsStatus ? (
           <>
-            <FormBgStyled />
-            {/* <FormDescription>
-                <span>Servicio<br /></span>
-                <p>Dom. 07/03/2021</p>
+            {/* <FormBgStyled /> */}
+            <FormDescription>
+              <span>
+                Servicio
+                <br />
+              </span>
+              <p>Dom. 06/06/2021</p>
 
-                <Info>
-                  <img src='/icons/info.svg' width='22px' style={{ marginRight: '10px' }} />
-                  <div style={{ width: '100%' }}>
-                    <p style={{ textAlign: 'start' }}>Se requiere el uso de mascarilla <br className='spaceEnter' /> en todas las áreas</p>
-                  </div>
-                </Info>
-              </FormDescription> */}
+              <Info>
+                <img src='/icons/info.svg' width='22px' style={{ marginRight: '10px' }} />
+                <div style={{ width: '100%' }}>
+                  <p style={{ textAlign: 'start' }}>
+                    Se requiere el uso de mascarilla <br className='spaceEnter' /> en todas las áreas
+                  </p>
+                </div>
+              </Info>
+            </FormDescription>
 
             <FormSeccionStyled>
               <FormReservation
