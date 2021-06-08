@@ -7,7 +7,7 @@ import NavBarMobile from 'components/NavBarMobile'
 import { FormSeccionStyled, FormBgStyled, FormDescription, Info } from 'layouts/Pages/ReservacionesLayout'
 
 export default function Reservaciones() {
-  const [reservationsStatus, setReservationsStatus] = useState(false)
+  const [reservationsStatus, setReservationsStatus] = useState(true)
   const [windowDimension, setWindowDimension] = useState(null)
   const [totalReservationsFirstService, setTotalReservationsFirstService] = useState(0)
   const [totalReservationsSecondService, setTotalReservationsSecondService] = useState(0)
@@ -72,7 +72,7 @@ export default function Reservaciones() {
                 Servicio
                 <br />
               </span>
-              <p>Dom. 06/06/2021</p>
+              <p>Dom. 13/06/2021</p>
 
               <Info>
                 <img src='/icons/info.svg' width='22px' style={{ marginRight: '10px' }} />
