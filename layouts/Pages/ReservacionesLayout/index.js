@@ -30,7 +30,7 @@ export const FormBgStyled = styled.div`
     margin: 0 auto;
   }
   @media screen and (min-width: 375px) and (max-width: 425px) {
-    height: 350px;
+    height: 390px;
   }
 `
 
