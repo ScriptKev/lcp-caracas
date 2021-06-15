@@ -5,7 +5,7 @@ const HeaderHome = () => {
   return (
     <HeaderStyled>
       <HeaderBg>
-        <Image src='/img/HeaderBg-06-06-21.webp' alt='headerBg' width={1920} height={1080} priority objectFit='cover' quality={100} />
+        <Image src='/img/HeaderBg.webp' alt='headerBg' width={1920} height={1080} priority objectFit='cover' quality={100} />
       </HeaderBg>
       {/* <ContainerStyled>
         <div className='header__title' style={{ margin: 'auto', textAlign: 'start' }}>
@@ -19,7 +19,7 @@ const HeaderHome = () => {
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', padding: '0 20px' }}>
         <img
           alt='headerBg'
-          src='/img/HeaderBg-06-06-21-letras.webp'
+          src='/img/Letras.webp'
           width='500px'
           style={{
             display: 'flex',
