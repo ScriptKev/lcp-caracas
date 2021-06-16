@@ -139,7 +139,7 @@ export const HeaderVersicleWrapper = styled.div`
   font-weight: 200;
   max-width: 280px;
 
-  @media (max-width: 1440px) {
+  @media (min-width: 1440px) {
     font-size: 1.3rem;
     max-width: 330px;
   }
