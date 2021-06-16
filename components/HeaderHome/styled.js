@@ -46,19 +46,6 @@ export const HeaderStyled = styled.header`
     letter-spacing: 7.2px;
   }
 
-  & .header__quote {
-    display: flex;
-    font-family: 'Helvetica Neue';
-    place-content: center;
-    font-weight: 200;
-    font-size: 1.4rem;
-    color: white;
-
-    & > div {
-      color: #ffc000;
-    }
-  }
-
   @media (max-width: 768px) {
     h1 {
       /* font-size: 25px;
@@ -139,6 +126,32 @@ export const SloganStyled = styled.div`
   @media (max-width: 425px) {
     & h2 {
       font-size: 1rem;
+    }
+  }
+`
+
+export const HeaderVersicleWrapper = styled.div`
+  margin: 0 auto;
+  padding-top: 2rem;
+  text-align: center;
+  color: white;
+  font-family: 'Helvetica Neue';
+  font-weight: 200;
+  max-width: 280px;
+
+  @media (max-width: 1440px) {
+    font-size: 1.3rem;
+    max-width: 330px;
+  }
+
+  & .header__quote {
+    display: flex;
+    place-content: center;
+    font-size: .85rem;
+    color: white;
+
+    & > span {
+      color: #ffc000;
     }
   }
 `

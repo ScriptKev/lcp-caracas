@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { ContainerStyled, HeaderBg, HeaderStyled, SloganStyled } from './styled'
+import { ContainerStyled, HeaderBg, HeaderStyled, SloganStyled, HeaderVersicleWrapper } from './styled'
 
 const HeaderHome = () => {
   return (
@@ -25,12 +25,22 @@ const HeaderHome = () => {
             display: 'flex',
             width: '100%',
             // margin: '0 auto 200px auto',
+            marginTop: '5rem',
+            marginBottom: '3rem',
             maxWidth: '600px',
             justifyContent: 'center',
             alignItems: 'center',
             minWidth: '270px',
           }}
         />
+
+        <HeaderVersicleWrapper>
+            <p>
+              "Piensen en aquel que sufrio... para que vuestro ánimo no se canse hasta desmayar"
+            </p>
+
+            <p className='header__quote'><span>Heb. </span>12:3</p>
+        </HeaderVersicleWrapper>
 
         {/* <img
           alt='headerBg'
