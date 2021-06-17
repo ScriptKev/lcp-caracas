@@ -8,7 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "@sendgrid/mail": "^7.4.2",
+    "@sendgrid/mail": "^7.4.5",
     "firebase": "^8.6.7",
     "leaflet": "^1.7.1",
     "leaflet-defaulticon-compatibility": "^0.1.1",
