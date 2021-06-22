@@ -20,27 +20,27 @@ const HeaderHome = () => {
         <img
           alt='headerBg'
           src='/img/Letras.webp'
-          width='500px'
+          width='400px'
           style={{
             display: 'flex',
-            width: '100%',
+            width: '80%',
             // margin: '0 auto 200px auto',
-            marginTop: '5rem',
+            marginTop: '4rem',
             marginBottom: '3rem',
-            maxWidth: '600px',
+            maxWidth: '480px',
             justifyContent: 'center',
             alignItems: 'center',
             minWidth: '270px',
           }}
         />
 
-        <HeaderVersicleWrapper>
+        {/* <HeaderVersicleWrapper>
             <p>
               "Piensen en aquel que sufrio... para que vuestro ánimo no se canse hasta desmayar"
             </p>
 
             <p className='header__quote'><span>Heb. </span>12:3</p>
-        </HeaderVersicleWrapper>
+        </HeaderVersicleWrapper> */}
 
         {/* <img
           alt='headerBg'
