@@ -66,8 +66,8 @@ export default function Reservaciones() {
       >
         {reservationsStatus ? (
           <>
-            <FormBgStyled />
-            {/* <FormDescription>
+            {/* <FormBgStyled /> */}
+            <FormDescription>
               <span>
                 Servicio
                 <br />
@@ -82,7 +82,7 @@ export default function Reservaciones() {
                   </p>
                 </div>
               </Info>
-            </FormDescription> */}
+            </FormDescription>
 
             <FormSeccionStyled>
               <FormReservation
