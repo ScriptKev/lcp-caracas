@@ -66,13 +66,13 @@ export default function Reservaciones() {
       >
         {reservationsStatus ? (
           <>
-            <FormBgStyled />
-            {/* <FormDescription>
+            {/* <FormBgStyled /> */}
+            <FormDescription>
               <span>
                 Servicio
                 <br />
               </span>
-              <p>Dom. 13/06/2021</p>
+              <p>Dom. 04/07/2021</p>
 
               <Info>
                 <img src='/icons/info.svg' width='22px' style={{ marginRight: '10px' }} />
@@ -82,7 +82,7 @@ export default function Reservaciones() {
                   </p>
                 </div>
               </Info>
-            </FormDescription> */}
+            </FormDescription>
 
             <FormSeccionStyled>
               <FormReservation
