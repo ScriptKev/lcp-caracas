@@ -59,7 +59,7 @@ const FormReservation = ({ totalReservationsFirstService, totalReservationsSecon
   }
 
   if (totalReservationsFirstService >= 60 && totalReservationsSecondService >= 60 && totalReservationsTertiaryService >= 60)
-    return <h1 style={{ marginTop: '50px' }}>Sin Cupos</h1>
+    return <h1 style={{ marginTop: '50px' }}>Lo sentimos, no hay  cupos disponibles</h1>
 
   return (
     <FormStyled onSubmit={handleSubmit(onSubmit)}>
